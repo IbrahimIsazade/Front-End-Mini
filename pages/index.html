@@ -5,9 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/index.css">
     <script src="../assets/js/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
 </head>
-<body>
+<body style="background-color: #F7F7FA;">
+    <div class="wrapper flex flex-col">
+        <!-- HEADER -->
+        <header class="header flex justify-between items-center">
+            <div class="left-part flex justify-between">
+                <img class="logo" src="../assets/images/logo.png" alt="PreSkool">
+                <button class="sidebar-opener">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="search-bar flex items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search here">
+                </div>
+            </div>
+
+            <div class="right-part flex items-center justify-between">
+                <ul class="buttons flex justify-between">
+                    <li>
+                        <button class="btn-rounded language">
+                            <img src="../assets/images/american-flag.png" alt="usa">
+                            <div class="other-languages flex flex-col items-center">
+                                <ul>
+                                    <li class="flex justify-between">
+                                        <img src="../assets/images/uk-flag.png" alt="">
+                                        <span>English (UK)</span>
+                                    </li>
+                                    <hr style="margin: 5px 0px;">
+                                    <li class="flex justify-between">
+                                        <img src="../assets/images/france-flag.png" alt="">
+                                        <span>Française</span>
+                                    </li>
+                                    <hr style="margin: 5px 0px;">
+                                    <li class="flex justify-between">
+                                        <img src="../assets/images/turkey-flag.png" alt="">
+                                        <span>Türkçe</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </li>
     
+                    <li>
+                        <button class="btn-rounded notifications">
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                    </li>
+    
+                    <li>
+                        <button class="btn-rounded fullscreen">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="profile flex items-center">
+                    <div class="profile-avatar flex justify-center items-center">
+                        <div class="outline">
+                            <img class="pointer" src="../assets/images/avatar.jpg" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="profile-info flex flex-col">
+                        <span class="name">Ibrahim Isazade</span>
+                        <span class="job">Administrator</span>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+
+        <main class="main">
+        </main>
+        <footer class="footer"></footer>
+    </div>
 </body>
 </html>
