@@ -65,3 +65,8 @@ img {
     --primary-light-gray: #F7F7FA;
 }
 
+@media (width < 376px) {
+    * {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,160 @@
+@import url(../css/static.css);
+.wrapper .header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  padding: 0px 20px;
+}
+.wrapper .header img {
+  width: 20px;
+  height: auto;
+}
+.wrapper .header .left-part .logo {
+  width: 200px;
+  height: 45px;
+  background-image: url(../../assets/images/logo.png);
+  background-repeat: no-repeat;
+}
+.wrapper .header .left-part .sidebar-opener {
+  height: 45px;
+  width: 45px;
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.wrapper .header .left-part .sidebar-opener i {
+  color: white;
+  font-size: 20px;
+}
+.wrapper .header .left-part .search-bar {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: var(--primary-light-gray);
+  border: 1px rgb(212, 212, 212) solid;
+  padding: 0px 15px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.wrapper .header .left-part .search-bar i {
+  color: rgb(170, 170, 170);
+}
+.wrapper .header .left-part .search-bar input {
+  width: 300px;
+  border: none;
+  background: transparent;
+  font-size: large;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  font-weight: 500;
+  color: rgb(134, 134, 134);
+}
+.wrapper .header .left-part .search-bar input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+.wrapper .header .left-part .search-bar input::placeholder {
+  color: rgb(170, 170, 170);
+}
+.wrapper .header .left-part .search-bar input:focus {
+  outline: none;
+}
+.wrapper .header .right-part .buttons li {
+  margin-right: 20px;
+}
+.wrapper .header .right-part .buttons li i {
+  font-size: large;
+}
+.wrapper .header .right-part .buttons li .language.active > .other-languages {
+  display: inline;
+}
+.wrapper .header .right-part .buttons li .language .other-languages {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 180px;
+  margin-right: 90px;
+  box-shadow: rgb(226, 226, 226) 0px 0px 10px;
+  transition: all 0.2s;
+}
+.wrapper .header .right-part .buttons li .language .other-languages li {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+.wrapper .header .right-part .buttons li .language .other-languages li span {
+  margin-left: 12px;
+}
+.wrapper .header .right-part .buttons li .language .other-languages li:hover {
+  background-color: #F3F3F3;
+}
+.wrapper .header .right-part .profile {
+  width: -moz-max-content;
+  width: max-content;
+  height: 50px;
+  padding: 0px 5px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.wrapper .header .right-part .profile .profile-avatar {
+  margin-right: 5px;
+}
+.wrapper .header .right-part .profile .profile-avatar img {
+  width: 45px;
+  height: 45px;
+  border: 2px rgb(214, 214, 214) solid;
+  scale: 1;
+  border-radius: 50%;
+  padding: 2px;
+}
+.wrapper .header .right-part .profile .profile-info {
+  font-weight: 500;
+}
+.wrapper .header .right-part .profile .profile-info .job {
+  color: var(--primary-blue);
+  font-size: small;
+}
+.wrapper .header .right-part .profile .settings {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 160px;
+  margin-right: 80px;
+  box-shadow: rgb(226, 226, 226) 0px 0px 10px;
+  transition: all 0.2s;
+}
+.wrapper .header .right-part .profile .settings li {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+.wrapper .header .right-part .profile .settings li span {
+  margin-left: 12px;
+}
+.wrapper .header .right-part .profile .settings li:hover {
+  background-color: #F3F3F3;
+}
+.wrapper .header .right-part .profile i {
+  margin-left: 10px;
+  transition: all 0.2s;
+}
+.wrapper .header .right-part .profile.active i {
+  transform: rotateZ(180deg);
+}
+.wrapper .header .right-part .profile.active > .settings {
+  display: inline;
+}
+.wrapper .header .right-part .profile:hover {
+  background-color: rgb(243, 243, 243);
+}/*# sourceMappingURL=header.css.map */

@@ -10,49 +10,43 @@
     <title>Student Management</title>
 </head>
 <body style="background-color: #F7F7FA;">
-    <div class="wrapper flex flex-col">
+    <div class="wrapper flex flex-col" style="background-color: #F7F7FA;">
         <!-- HEADER -->
         <header class="header flex justify-between items-center">
             <div class="left-part flex justify-between">
-                <img class="logo" src="../assets/images/logo.png" alt="PreSkool">
+                <div class="logo"></div>
                 <button class="sidebar-opener">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="search-bar flex items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search here">
+                    <input type="text" placeholder="Search student">
                 </div>
             </div>
 
             <div class="right-part flex items-center justify-between">
-                <ul class="buttons flex justify-between">
+                <ul class="buttons flex">
                     <li>
                         <button class="btn-rounded language">
                             <img src="../assets/images/american-flag.png" alt="usa">
-                            <div class="other-languages flex flex-col items-center">
-                                <ul>
-                                    <li class="flex justify-between">
-                                        <img src="../assets/images/uk-flag.png" alt="">
-                                        <span>English (UK)</span>
-                                    </li>
-                                    <hr style="margin: 5px 0px;">
-                                    <li class="flex justify-between">
-                                        <img src="../assets/images/france-flag.png" alt="">
-                                        <span>Française</span>
-                                    </li>
-                                    <hr style="margin: 5px 0px;">
-                                    <li class="flex justify-between">
-                                        <img src="../assets/images/turkey-flag.png" alt="">
-                                        <span>Türkçe</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </button>
-                    </li>
+                            <ul class="other-languages flex flex-col">
+                                <li class="flex justify-between">
+                                    <img src="../assets/images/uk-flag.png" alt="">
+                                    <span>English</span>
+                                </li>
+                                <hr style="margin: 5px 0px; width: 100%;">
     
-                    <li>
-                        <button class="btn-rounded notifications">
-                            <i class="fa-regular fa-bell"></i>
+                                <li class="flex justify-between">
+                                    <img src="../assets/images/france-flag.png" alt="">
+                                    <span>Française</span>
+                                </li>
+                                <hr style="margin: 5px 0px; width: 100%;">
+                                
+                                <li class="flex justify-between">
+                                    <img src="../assets/images/turkey-flag.png" alt="">
+                                    <span>Türkçe</span>
+                                </li>
+                            </ul>
                         </button>
                     </li>
     
@@ -63,24 +57,38 @@
                     </li>
                 </ul>
 
-                <div class="profile flex items-center">
+                <div class="profile flex items-center pointer">
                     <div class="profile-avatar flex justify-center items-center">
-                        <div class="outline">
-                            <img class="pointer" src="../assets/images/avatar.jpg" alt="avatar">
-                        </div>
+                        <img class="pointer" src="../assets/images/avatar.jpg" alt="avatar">
                     </div>
                     <div class="profile-info flex flex-col">
                         <span class="name">Ibrahim Isazade</span>
                         <span class="job">Administrator</span>
                     </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="settings">
+                        <li><a href="">My profile</a></li>
+                        <hr style="margin: 2px 0px;">
+                        <li><a href="">Logout</a></li>
+                    </ul>
                 </div>
             </div>
             
         </header>
 
-        <main class="main">
+        <!-- <main class="main flex">
+            <aside class="sidebar">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, hic ad. Qui saepe minima minus est? Corrupti illum maxime quas ex dignissimos obcaecati hic ipsum itaque, vitae assumenda. Dignissimos, maiores!
+                Voluptatem ullam repellat quia exercitationem expedita cum hic illum dolorem ut aut, nemo libero earum qui asperiores quasi possimus, ab sunt rem veritatis! Illo optio pariatur nam ducimus, aspernatur in!
+                Nihil, velit cupiditate tempore eaque vel veniam eligendi, suscipit ut mollitia, aut adipisci corporis? Optio animi aspernatur, ullam molestias facilis asperiores vitae quis, aperiam numquam totam iusto? Omnis, hic ab?
+                Nihil optio suscipit enim quia incidunt ipsam voluptatem, reprehenderit consequatur a magni animi, aliquid possimus vero obcaecati debitis consectetur natus voluptatibus maiores eius vel, dolorem expedita nulla dolores odit! Neque?
+                Quasi voluptatem facere asperiores. Ratione fuga expedita libero quaerat ex. Ducimus earum placeat, pariatur tenetur ipsum optio laudantium quaerat sunt voluptate ipsam consequatur iste consequuntur reiciendis harum voluptatem molestiae magnam.
+                Dolorum nesciunt iusto impedit alias dignissimos consectetur molestiae. Dolorem, aliquid libero magni officia, amet quod corrupti explicabo adipisci harum velit a. Iure quis, numquam voluptates a non adipisci rerum necessitatibus.
+                Laborum, error quas. Iusto mollitia molestiae possimus, cupiditate laborum unde deleniti voluptate iure praesentium excepturi quod obcaecati accusantium. Dicta sapiente quam natus velit obcaecati itaque suscipit eius facilis odit nobis.
+                Minus, fuga animi recusandae vitae, neque tenetur, inventore suscipit ea nobis quibusdam reprehenderit quia magni accusamus omnis dolores voluptatum iure nisi delectus fugiat blanditiis fugit. Obcaecati beatae praesentium delectus facilis.</p>
+            </aside>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer"></footer> -->
     </div>
 </body>
 </html>
