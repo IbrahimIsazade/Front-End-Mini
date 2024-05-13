@@ -6,6 +6,11 @@
 }
 
 /* Permanents */
+a {
+    text-decoration: none;
+    color: black;
+}
+
 i {
     color: var(--primary-gray);
 }

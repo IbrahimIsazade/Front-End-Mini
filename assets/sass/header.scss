@@ -150,7 +150,7 @@
                     background-color: white;
                     padding: 10px;
                     border-radius: 10px;
-                    width: 200px;
+                    width: 150px;
                     margin-top: 160px;
                     margin-right: 80px;
                     box-shadow: rgb(226, 226, 226) 0px 0px 10px;
@@ -192,5 +192,51 @@
             }
         }
 
+    }
+}
+
+// Extra Small ( Z Fold, Iphone SE  ) \\
+@media only screen and (max-width: 376px) {
+    .wrapper {
+        .header {
+            padding: 0px 15px;
+
+            .left-part {
+                .logo {
+                    display: none;
+                }
+    
+                .sidebar-opener {
+                    margin: 0;
+                }
+
+                .search-bar {
+                    display: none;
+                }
+            }
+
+            .right-part {
+                .buttons {
+                    .fullscreen {
+                        display: none;
+                    }
+
+                    li {
+                        margin-right: 10px;
+                    }
+                }
+
+                .profile {
+                    .profile-info {
+                        display: none;
+                    }
+
+                    .settings {
+                        margin-top: 130px;
+                        width: 78px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -126,7 +126,7 @@
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  width: 200px;
+  width: 150px;
   margin-top: 160px;
   margin-right: 80px;
   box-shadow: rgb(226, 226, 226) 0px 0px 10px;
@@ -157,4 +157,32 @@
 }
 .wrapper .header .right-part .profile:hover {
   background-color: rgb(243, 243, 243);
+}
+
+@media only screen and (max-width: 376px) {
+  .wrapper .header {
+    padding: 0px 15px;
+  }
+  .wrapper .header .left-part .logo {
+    display: none;
+  }
+  .wrapper .header .left-part .sidebar-opener {
+    margin: 0;
+  }
+  .wrapper .header .left-part .search-bar {
+    display: none;
+  }
+  .wrapper .header .right-part .buttons .fullscreen {
+    display: none;
+  }
+  .wrapper .header .right-part .buttons li {
+    margin-right: 10px;
+  }
+  .wrapper .header .right-part .profile .profile-info {
+    display: none;
+  }
+  .wrapper .header .right-part .profile .settings {
+    margin-top: 130px;
+    width: 78px;
+  }
 }/*# sourceMappingURL=header.css.map */

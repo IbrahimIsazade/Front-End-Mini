@@ -15,10 +15,17 @@ profile.onclick = () => {
 
 
 // Fullscreen mode \\
+let fullscreenEnabled = false;
 const fullscreenBtn = document.querySelector(".fullscreen");
 const wrapper = document.querySelector(".wrapper");
 
 fullscreenBtn.onclick = () => {
-    if (wrapper.requestFullscreen) 
-        { wrapper.requestFullscreen(); }
+    if (!fullscreenEnabled) { 
+        wrapper.requestFullscreen(); 
+        fullscreenEnabled = true;
+    }
+    else { 
+        document.exitFullscreen(); 
+        fullscreenEnabled = false;
+    }
 }
