@@ -2,7 +2,7 @@
 # School Management Website
 
 ⚠ This website is created only for educational purpose ⚠
-# [Template](https://preschool.dreamstechnologies.com/template/index.html)
+### [Template](https://preschool.dreamstechnologies.com/template/index.html)
 ## Technologies that were used
 - [SASS](https://sass-lang.com/) for writing CSS faster
 - [JSON Server](https://www.npmjs.com/package/json-server) for making database easily
