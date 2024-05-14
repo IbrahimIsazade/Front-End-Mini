@@ -29,3 +29,8 @@ fullscreenBtn.onclick = () => {
         fullscreenEnabled = false;
     }
 }
+
+// Dropdown menus \\
+function showDropdown(e) {
+    e.parentElement.classList.toggle("open")
+}

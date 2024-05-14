@@ -63,6 +63,20 @@ img {
     align-items: center;
 }
 
+.iconize::after,
+.iconize::before {
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
 :root {
     --primary-blue: #3D5EE1;
     --primary-light-blue: #70C4CF;
