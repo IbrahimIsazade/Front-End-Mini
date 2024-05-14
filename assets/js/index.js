@@ -31,6 +31,6 @@ fullscreenBtn.onclick = () => {
 }
 
 // Dropdown menus \\
-function showDropdown(e) {
-    e.parentElement.classList.toggle("open")
+function showDropdown(e, itemCount) {
+    e.parentElement.classList.toggle(`open-${itemCount}`)
 }

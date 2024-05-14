@@ -162,25 +162,29 @@
   width: 100%;
 }
 .wrapper .main .sidebar {
-  width: 250px;
-  height: 100%;
+  width: 240px;
+  height: calc(100vh - 60px);
   background-color: white;
 }
 .wrapper .main .sidebar .menus {
   margin-top: 20px;
 }
 .wrapper .main .sidebar .menus .menu-title {
+  width: 100%;
+  height: 40px;
   color: #b6b6b6;
+}
+.wrapper .main .sidebar .menus .menu-title span {
   margin-left: 20px;
+  margin-top: 10px;
 }
 .wrapper .main .sidebar .menus .submenu {
   height: 50px;
   overflow: hidden;
   transition: all 0.5s;
-  margin-top: 10px;
 }
 .wrapper .main .sidebar .menus .submenu a {
-  width: 95%;
+  width: 90%;
   height: 50px;
   padding: 0px 10px;
   color: var(--primary-gray);
@@ -190,16 +194,15 @@
   font-size: 17px;
   font-weight: 500;
 }
-.wrapper .main .sidebar .menus .submenu a i {
+.wrapper .main .sidebar .menus .submenu a .arrow {
   transition: all 0.2s;
 }
-.wrapper .main .sidebar .menus .submenu a span::before {
-  content: "\f015";
-  margin-right: 10px;
-  font-size: 14px;
+.wrapper .main .sidebar .menus .submenu a span i {
+  margin: 0px 5px 0px 10px;
+  font-size: 16px;
 }
 .wrapper .main .sidebar .menus .submenu a:hover {
-  width: 100%;
+  width: 95%;
   color: var(--primary-blue);
 }
 .wrapper .main .sidebar .menus .submenu a:hover i {
@@ -229,16 +232,17 @@
 .wrapper .main .sidebar .menus .submenu ul .active-btn a {
   color: white;
 }
-.wrapper .main .sidebar .menus .open {
-  height: 180px;
-}
-.wrapper .main .sidebar .menus .open i {
-  color: var(--primary-blue);
+.wrapper .main .sidebar .menus .open-2 .arrow, .wrapper .main .sidebar .menus .open-3 .arrow, .wrapper .main .sidebar .menus .open-4 .arrow {
   transform: rotateZ(90deg);
 }
-.wrapper .main .sidebar .menus .open .head {
-  color: var(--primary-blue);
-  width: 100%;
+.wrapper .main .sidebar .menus .open-2 {
+  height: 135px;
+}
+.wrapper .main .sidebar .menus .open-3 {
+  height: 180px;
+}
+.wrapper .main .sidebar .menus .open-4 {
+  height: 220px;
 }
 .wrapper .main .sidebar .menus .active::before {
   content: "";
@@ -249,7 +253,7 @@
   left: -4px;
   position: absolute;
 }
-.wrapper .main .sidebar .menus .active .head, .wrapper .main .sidebar .menus .active i {
+.wrapper .main .sidebar .menus .active .name, .wrapper .main .sidebar .menus .active i {
   color: var(--primary-blue);
 }
 

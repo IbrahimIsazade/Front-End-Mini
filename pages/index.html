@@ -81,31 +81,111 @@
         <main class="main flex">
             <aside class="sidebar">
                 <ul class="menus">
-                    <li class="menu-title">
+                    <li class="menu-title flex items-center">
                         <span>Main Menu</span>
                     </li>
                     
                     <li class="submenu active open">
-                        <a href="#" onclick="showDropdown(this)" class="head flex justify-between items-center">
-                            <span class="iconize name">Dashboard</span>
-                            <i class="fa-solid fa-chevron-right"></i>
+                        <a href="#" class="head flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-house"></i>
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li class="submenu">
+                        <a href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Students
+                            </span>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </a>
                         <ul>
-                            <li class="active-btn pointer"><a href="#" >Admin Dashboard</a></li>
-                            <li class="pointer"><a href="#">Teacher Dashboard</a></li>
-                            <li class="pointer"><a href="#">Student Dashboard</a></li>
+                            <li class="pointer"><a href="#" >Students list</a></li>
+                            <li class="pointer"><a href="#">Student add</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="submenu">
+                        <a href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                Teachers
+                            </span>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                        <ul>
+                            <li class="pointer"><a href="#" >Teachers list</a></li>
+                            <li class="pointer"><a href="#">Teacher add</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-title flex items-center">
+                        <span>Management</span>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-user-group"></i>
+                                Staff
+                            </span>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                        <ul>
+                            <li class="pointer"><a href="#" >Staff list</a></li>
+                            <li class="pointer"><a href="#">Employee add</a></li>
                         </ul>
                     </li>
 
                     <li class="submenu">
-                        <a href="#" onclick="showDropdown(this)" class="head flex justify-between items-center">
-                            <span class="iconize name">Dashboard</span>
-                            <i class="fa-solid fa-chevron-right"></i>
+                        <a href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-newspaper"></i>
+                                Blogs
+                            </span>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </a>
                         <ul>
-                            <li class="pointer"><a href="#" >Admin Dashboard</a></li>
-                            <li class="pointer"><a href="#">Teacher Dashboard</a></li>
-                            <li class="pointer"><a href="#">Student Dashboard</a></li>
+                            <li class="pointer"><a href="#" >Blogs list</a></li>
+                            <li class="pointer"><a href="#">Blog add</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="#" class="head flex justify-between items-center">
+                            <span class="iconize name">
+                                <i class="fa-solid fa-money-bill"></i>
+                                Salary
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title flex items-center">
+                        <span>Other</span>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="#" onclick="showDropdown(this, 4)" class="head flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                Pages
+                            </span>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                        <ul>
+                            <li class="pointer"><a href="#" >Sign in</a></li>
+                            <li class="pointer"><a href="#">Sign up</a></li>
+                            <li class="pointer"><a href="#">Reset password</a></li>
+                            <li class="pointer"><a href="#">Not found</a></li>
                         </ul>
                     </li>
                 </ul>
