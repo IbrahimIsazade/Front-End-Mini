@@ -82,6 +82,11 @@ img {
     --primary-light-blue: #70C4CF;
     --primary-gray: #6F6F6F;
     --primary-light-gray: #F7F7FA;
+    --primary-dark-gray: #2C323F;
+}
+
+.wrapper {
+    overflow-x: hidden;
 }
 
 @media (width < 376px) {

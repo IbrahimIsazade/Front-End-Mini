@@ -1,2 +1,69 @@
 @import url(../css/header.css);
-@import url(../css/static.css);/*# sourceMappingURL=index.css.map */
+@import url(../css/sidebar.css);
+@import url(../css/static.css);
+.wrapper .main .content {
+  width: 100%;
+  padding: 30px;
+}
+.wrapper .main .content .page-header {
+  width: 100%;
+  font-weight: 500;
+}
+.wrapper .main .content .page-header .page-welcome {
+  font-size: 22px;
+  color: var(--primary-dark-gray);
+}
+.wrapper .main .content .page-header .page-adress {
+  font-size: 17px;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .info {
+  margin-top: 40px;
+}
+.wrapper .main .content .info .school-info {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.wrapper .main .content .info .school-info .info-box {
+  padding: 15px;
+  flex-grow: 1;
+  max-width: 250px;
+  background-color: white;
+  border-radius: 10px;
+}
+.wrapper .main .content .info .school-info .info-box .box-info .info-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .info .school-info .info-box .box-info .info-value {
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+}
+.wrapper .main .content .info .school-info .info-box .image {
+  width: 70px;
+  height: 70px;
+  background-color: #EDF4FF;
+  border-radius: 8px;
+  scale: 0.9;
+}
+.wrapper .main .content .charts {
+  margin-top: 20px;
+  gap: 20px;
+}
+.wrapper .main .content .charts .chart {
+  width: 522px;
+  height: 360px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+}
+.wrapper .main .content .charts .chart .chart-title {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrapper .main .sidebar.hide + .content {
+  margin-left: 60px;
+}/*# sourceMappingURL=index.css.map */

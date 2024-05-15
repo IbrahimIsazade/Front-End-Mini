@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apexcharts": "^3.49.1",
     "json-server": "^1.0.0-alpha.23"
   }
 }

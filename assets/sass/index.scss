@@ -1,2 +1,92 @@
 @import url(../css/header.css);
+@import url(../css/sidebar.css);
 @import url(../css/static.css);
+
+
+.wrapper {
+    .main {
+        .content {
+            width: 100%;
+            padding: 30px;
+
+            .page-header {
+                width: 100%;
+                font-weight: 500;
+
+                .page-welcome {
+                    font-size: 22px;
+                    color: var(--primary-dark-gray);
+                }
+
+                .page-adress {
+                    font-size: 17px;
+                    color: var(--primary-gray);
+                }
+            }
+
+            .info {
+                margin-top: 40px;
+
+                .school-info {
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+                    .info-box {
+                        padding: 15px;
+                        flex-grow: 1;
+                        max-width: 250px;
+                        background-color: white;
+                        border-radius: 10px;
+
+                        .box-info {
+
+                            .info-title {
+                                font-weight: 500;
+                                font-size: 18px;
+                                color: var(--primary-gray);
+                            }
+                            
+                            .info-value {
+                                font-weight: 700;
+                                font-size: 24px;
+                                color: black;
+                            }
+                        }
+
+                        .image {
+                            width: 70px;
+                            height: 70px;
+                            background-color: #EDF4FF;
+                            border-radius: 8px;
+                            scale: 0.9;
+                        }
+                    }
+                }
+            }
+
+            .charts {
+                margin-top: 20px;
+                gap: 20px;
+
+                .chart {
+                    width: 522px;
+                    height: 360px;
+                    border-radius: 10px;
+                    background-color: white;
+                    padding: 15px;
+
+                    .chart-title {
+                        font-family: sans-serif;
+                        font-size: 20px; 
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .sidebar.hide + .content {
+            margin-left: 60px;
+        }
+
+    }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/index.css">
-    <script src="../assets/js/index.js" defer></script>
+    <script type="module" src="../assets/js/index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
     <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
@@ -106,7 +106,7 @@
                         </a>
                         <ul>
                             <li class="pointer"><a href="#" >Students list</a></li>
-                            <li class="pointer"><a href="#">Student add</a></li>
+                            <li class="pointer"><a href="#">Add Student</a></li>
                         </ul>
                     </li>
                     
@@ -121,7 +121,7 @@
                         </a>
                         <ul>
                             <li class="pointer"><a href="#" >Teachers list</a></li>
-                            <li class="pointer"><a href="#">Teacher add</a></li>
+                            <li class="pointer"><a href="#">Add Teacher</a></li>
                         </ul>
                     </li>
 
@@ -140,7 +140,7 @@
                         </a>
                         <ul>
                             <li class="pointer"><a href="#" >Staff list</a></li>
-                            <li class="pointer"><a href="#">Employee add</a></li>
+                            <li class="pointer"><a href="#">Add Employee</a></li>
                         </ul>
                     </li>
 
@@ -154,8 +154,8 @@
                             <i class="fa-solid fa-chevron-right arrow"></i>
                         </a>
                         <ul>
-                            <li class="pointer"><a href="#" >Blogs list</a></li>
-                            <li class="pointer"><a href="#">Blog add</a></li>
+                            <li class="pointer"><a href="#" >All Blogs</a></li>
+                            <li class="pointer"><a href="#">Add Blog</a></li>
                         </ul>
                     </li>
 
@@ -191,10 +191,69 @@
                 </ul>
             </aside>
             
-        </main>
+            <div class="content">
+                <div class="page-header flex justify-between">
+                    <h4 class="page-welcome">Welcome {Username}!</h4>
+                    <span class="page-adress">Dashboard</span>
+                </div>
+                <div class="info flex flex-col">
+                    <ul class="school-info flex">
+                        <li class="info-box flex items-center justify-between">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">Students</span>
+                                <span class="info-value">50055</span>
+                            </div>
 
-        <!-- FOOTER -->
-        <footer class="footer"></footer>
+                            <img class="image" src="../assets/images/student.svg" alt="image">
+                        </li>
+
+                        <li class="info-box flex items-center justify-between">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">Awards</span>
+                                <span class="info-value">50+</span>
+                            </div>
+
+                            <img class="image" src="../assets/images/medal.svg" alt="image">
+                        </li>
+
+                        <li class="info-box flex items-center justify-between">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">Department</span>
+                                <span class="info-value">30+</span>
+                            </div>
+
+                            <img class="image" src="../assets/images/building.svg" alt="image">
+                        </li>
+
+                        <li class="info-box flex items-center justify-between">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">Revenue</span>
+                                <span class="info-value">505$</span>
+                            </div>
+
+                            <img class="image" src="../assets/images/coin-raise.svg" alt="image">
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="charts flex">
+                    <li class="chart">
+                        <span class="chart-title">
+                            Overview
+                        </span>
+                        <div class="teacher-student-chart"></div>
+                    </li>
+                    <li class="chart">
+                        <span class="chart-title">
+                            Number of students
+                        </span>
+                        <div class="student-number-chart"></div>
+                    </li>
+                </ul>
+            </div>
+
+        </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </body>
 </html>
