@@ -48,21 +48,44 @@
   border-radius: 8px;
   scale: 0.9;
 }
-.wrapper .main .content .charts {
+.wrapper .main .content .boxes {
   margin-top: 20px;
+  flex-wrap: wrap;
   gap: 20px;
 }
-.wrapper .main .content .charts .chart {
-  width: 522px;
-  height: 360px;
+.wrapper .main .content .boxes .box {
+  overflow: hidden;
+  flex-grow: 1;
+  width: 350px;
+  height: -moz-max-content;
+  height: max-content;
   border-radius: 10px;
   background-color: white;
   padding: 15px;
 }
-.wrapper .main .content .charts .chart .chart-title {
+.wrapper .main .content .boxes .box .box-title {
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+.wrapper .main .content .boxes .students-table table {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px var(--primary-light-gray) solid;
+}
+.wrapper .main .content .boxes .students-table table thead {
+  height: 50px;
+  background-color: var(--primary-light-gray);
+}
+.wrapper .main .content .boxes .students-table table tbody tr {
+  height: 50px;
+}
+.wrapper .main .content .boxes .students-table table tbody tr:nth-child(even) {
+  background-color: var(--primary-light-gray);
+}
+.wrapper .main .content .boxes .students-table table th,
+.wrapper .main .content .boxes .students-table table td {
+  padding-left: 10px;
 }
 .wrapper .main .sidebar.hide + .content {
   margin-left: 60px;

@@ -1,3 +1,6 @@
+.wrapper {
+  overflow: hidden;
+}
 .wrapper .main {
   width: 100%;
 }
@@ -12,6 +15,7 @@
   transition: all 0.3s;
 }
 .wrapper .main .sidebar .menus {
+  height: 100%;
   margin-top: 20px;
 }
 .wrapper .main .sidebar .menus .menu-title {

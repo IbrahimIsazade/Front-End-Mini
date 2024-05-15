@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/index.css">
-    <script type="module" src="../assets/js/index.js" defer></script>
+    <script src="../assets/js/index.js" defer></script>
+    <script type="module" src="../assets/js/apexcharts.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
     <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
@@ -79,7 +81,7 @@
 
         <!-- CONTENT -->
         <main class="main flex">
-            <aside class="sidebar">
+            <aside class="sidebar flex">
                 <ul class="menus">
                     <li class="menu-title flex items-center">
                         <span>Main Menu</span>
@@ -236,20 +238,78 @@
                     </ul>
                 </div>
 
-                <ul class="charts flex">
-                    <li class="chart">
-                        <span class="chart-title">
+                <ul class="boxes flex">
+                    <li class="box">
+                        <span class="box-title">
                             Overview
                         </span>
                         <div class="teacher-student-chart"></div>
                     </li>
-                    <li class="chart">
-                        <span class="chart-title">
+
+                    <li class="box">
+                        <span class="box-title">
                             Number of students
                         </span>
                         <div class="student-number-chart"></div>
                     </li>
+
+                    <li class="box students-table flex flex-col">
+                        <span class="box-title">
+                            Start Students
+                        </span>
+                        <table cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Fullname</th>
+                                    <th>Percentage</th>
+                                    <th>Best Subject</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>S000</td>
+                                    <td>Jhon Doe</td>
+                                    <td>97.2%</td>
+                                    <td>Math</td>
+                                </tr>
+
+                                <tr>
+                                    <td>S000</td>
+                                    <td>Jhon Doe</td>
+                                    <td>97.2%</td>
+                                    <td>Math</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>S000</td>
+                                    <td>Jhon Doe</td>
+                                    <td>97.2%</td>
+                                    <td>Math</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>S000</td>
+                                    <td>Jhon Doe</td>
+                                    <td>97.2%</td>
+                                    <td>Math</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>S000</td>
+                                    <td>Jhon Doe</td>
+                                    <td>97.2%</td>
+                                    <td>Math</td>
+                                </tr>
+                                
+                            </tbody>
+                            
+                        </table>
+                    </li>
                 </ul>
+
+                
             </div>
 
         </main>

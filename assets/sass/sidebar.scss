@@ -1,19 +1,21 @@
 .wrapper {
+    overflow: hidden;
     .main {
         width: 100%;
-
+        
         .sidebar.hide {
             transform: translateX(-180px);
             position: absolute;
         }
-
+        
         .sidebar {
             width: 240px;
             height: calc(100vh - 60px);
             background-color: white;
             transition: all .3s;
-
+            
             .menus {
+                height: 100%;
                 margin-top: 20px;
                 
                 .menu-title {
