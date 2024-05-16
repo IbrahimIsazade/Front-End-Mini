@@ -15,7 +15,9 @@
   margin-top: 60px;
   transition: all 0.3s;
   z-index: 99;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   overflow-y: scroll;
   /* width */
   /* Track */

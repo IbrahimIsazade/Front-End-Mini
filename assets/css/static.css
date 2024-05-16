@@ -111,6 +111,7 @@ table tbody tr:nth-child(even) {
 table th,
 table td {
     padding-left: 10px;
+    padding: 0px 20px;
 }
 
 .wrapper .main .content .boxes {

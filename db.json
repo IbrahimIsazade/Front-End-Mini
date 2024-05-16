@@ -6,7 +6,7 @@
             "surename": "Doe",
             "dateOfBirth": "0 Jan 0000",
             "class": "0 A",
-            "parentName": ["Jane Doe","Jhon Doe"],
+            "parentName": "Jane Doe",
             "mobileNumber":"000 000 00 00",
             "address":"0000 Drive, Address"
         }

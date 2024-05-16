@@ -37,6 +37,7 @@
   scale: 1;
 }
 .wrapper .header .left-part .search-bar {
+  width: -moz-max-content;
   width: max-content;
   background-color: var(--primary-light-gray);
   border: 1px rgb(212, 212, 212) solid;
@@ -56,6 +57,9 @@
   padding-bottom: 2px;
   font-weight: 500;
   color: rgb(134, 134, 134);
+}
+.wrapper .header .left-part .search-bar input::-moz-placeholder {
+  color: rgb(170, 170, 170);
 }
 .wrapper .header .left-part .search-bar input::placeholder {
   color: rgb(170, 170, 170);
@@ -107,12 +111,15 @@
   background-color: #F3F3F3;
 }
 .wrapper .header .right-part .profile {
+  width: -moz-max-content;
   width: max-content;
   height: 50px;
   padding: 0px 5px;
   border-radius: 8px;
   transition: all 0.2s;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: all 0.2s;
 }
 .wrapper .header .right-part .profile:hover {
