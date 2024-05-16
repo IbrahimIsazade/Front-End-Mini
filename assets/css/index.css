@@ -2,8 +2,10 @@
 @import url(../css/sidebar.css);
 @import url(../css/static.css);
 .wrapper .main .content {
-  width: 100%;
+  margin-left: 240px;
+  width: calc(100% - 240px);
   padding: 30px;
+  margin-top: 60px;
 }
 .wrapper .main .content .page-header {
   width: 100%;
@@ -57,7 +59,6 @@
   overflow: hidden;
   flex-grow: 1;
   width: 350px;
-  height: -moz-max-content;
   height: max-content;
   border-radius: 10px;
   background-color: white;
@@ -68,24 +69,8 @@
   font-size: 20px;
   font-weight: 700;
 }
-.wrapper .main .content .boxes .students-table table {
-  margin-top: 20px;
-  border-radius: 8px;
-  border: 2px var(--primary-light-gray) solid;
-}
-.wrapper .main .content .boxes .students-table table thead {
-  height: 50px;
-  background-color: var(--primary-light-gray);
-}
-.wrapper .main .content .boxes .students-table table tbody tr {
-  height: 50px;
-}
-.wrapper .main .content .boxes .students-table table tbody tr:nth-child(even) {
-  background-color: var(--primary-light-gray);
-}
-.wrapper .main .content .boxes .students-table table th,
-.wrapper .main .content .boxes .students-table table td {
-  padding-left: 10px;
+.wrapper .main .content .boxes .students-table {
+  min-width: 500px;
 }
 .wrapper .main .sidebar.hide + .content {
   margin-left: 60px;

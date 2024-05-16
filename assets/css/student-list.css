@@ -1,0 +1,62 @@
+@import url(../css/header.css);
+@import url(../css/sidebar.css);
+@import url(../css/static.css);
+.wrapper .main .content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 30px;
+  margin-top: 60px;
+}
+.wrapper .main .content .page-header {
+  width: 100%;
+  font-weight: 500;
+}
+.wrapper .main .content .page-header .page-welcome {
+  font-size: 22px;
+  color: var(--primary-dark-gray);
+}
+.wrapper .main .content .page-header .page-adress {
+  font-size: 17px;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .boxes .box .search input {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  padding-left: 8px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.wrapper .main .content .boxes .box .search input:focus {
+  outline: 1px var(--primary-blue) solid;
+}
+.wrapper .main .content .boxes .box .search input[type=text] {
+  border: 1px var(--primary-light-gray) solid;
+}
+.wrapper .main .content .boxes .box .search input[type=submit] {
+  font-weight: 600;
+  background-color: var(--primary-blue);
+  padding: 0px 15px;
+  transition: all 0.2s;
+  color: white;
+}
+.wrapper .main .content .boxes .box .search input[type=submit]:hover {
+  scale: 1.1;
+  background-color: #4f72ff;
+}
+.wrapper .main .content .boxes .box .search input[type=submit]:active {
+  scale: 1;
+}
+.wrapper .main .content .boxes .box .search .input_id {
+  width: 220px;
+}
+.wrapper .main .content .boxes .box .search .input_name {
+  width: 300px;
+}
+.wrapper .main .content .boxes .box .search .input_phone {
+  width: 340px;
+}
+.wrapper .main .content .boxes .students {
+  margin-top: 20px;
+}/*# sourceMappingURL=student-list.css.map */

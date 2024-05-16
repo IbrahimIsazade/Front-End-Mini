@@ -89,6 +89,53 @@ img {
     overflow-x: hidden;
 }
 
+table {
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px var(--primary-light-gray) solid;
+}
+
+table thead {
+    height: 50px;
+    background-color: var(--primary-light-gray);
+}
+    
+table tbody tr{
+    height: 50px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--primary-light-gray);
+}
+
+table th,
+table td {
+    padding-left: 10px;
+}
+
+.wrapper .main .content .boxes {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    user-select: none;
+}
+.wrapper .main .content .boxes .box {
+    overflow: hidden;
+    flex-grow: 1;
+    width: max-content;
+    min-width: 350px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+}
+.wrapper .main .content .boxes .box .box-title {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+    
+
 @media (width < 376px) {
     * {
         font-size: 10px;
