@@ -19,10 +19,6 @@
      -moz-user-select: none;
           user-select: none;
   overflow-y: scroll;
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
 .wrapper .main .sidebar .menus {
   height: 100%;
@@ -125,17 +121,4 @@
 }
 .wrapper .main .sidebar:hover {
   transform: translateX(0px);
-}
-.wrapper .main .sidebar::-webkit-scrollbar {
-  width: 10px;
-}
-.wrapper .main .sidebar::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-.wrapper .main .sidebar::-webkit-scrollbar-thumb {
-  background: #cfcfcf;
-  border-radius: 10px;
-}
-.wrapper .main .sidebar::-webkit-scrollbar-thumb:hover {
-  background: #b6b6b6;
 }/*# sourceMappingURL=sidebar.css.map */

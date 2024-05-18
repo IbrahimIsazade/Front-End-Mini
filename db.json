@@ -1,14 +1,21 @@
 {
-    "students": [
-        { 
-            "id": "S0000",
-            "name": "Jhon",
-            "surename": "Doe",
-            "dateOfBirth": "0 Jan 0000",
-            "class": "0 A",
-            "parentName": "Jane Doe",
-            "mobileNumber":"000 000 00 00",
-            "address":"0000 Drive, Address"
-        }
-    ]
+  "students": [
+    {
+      "id": "33a1",
+      "name": "Zakir",
+      "dateOfBirth": "2034-06-23",
+      "gender": "Male",
+      "class": "11 B",
+      "parentName": "PAZA",
+      "mobileNumber": "1233123",
+      "address": "adress"
+    }
+  ],
+  "teachers": [],
+  "admins": [
+    {
+      "login": "Ibraim",
+      "password": "admin123"
+    }
+  ]
 }

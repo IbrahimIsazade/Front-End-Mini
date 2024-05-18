@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/student-list.css">
+    <link rel="stylesheet" href="../assets/css/add-page.css">
     <script src="../assets/js/index.js" defer></script>
-    <script src="../assets/js/student-list.js" defer></script>
+    <script src="../assets/js/add-student.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
     <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     
-                    <li class="submenu pointer  active open">
+                    <li class="submenu pointer active">
                         <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -104,8 +104,8 @@
                             <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
-                            <li class="pointer active-btn"><a href="#" >Students list</a></li>
-                            <li class="pointer"><a href="#">Add Student</a></li>
+                            <li class="pointer"><a href="./student-list.html" >Students list</a></li>
+                            <li class="pointer active-btn"><a href="#">Add Student</a></li>
                         </ul>
                     </li>
                     
@@ -193,50 +193,29 @@
             <div class="content">
                 <div class="page-header flex justify-between">
                     <h4 class="page-welcome">Students</h4>
-                    <span class="page-adress">Students / Student List</span>
+                    <span class="page-adress">Students / Add Student</span>
                 </div>
-
-                <div class="boxes">
+                
+                <div class="boxes flex items-center justify-center">
                     <div class="box">
                         <span class="box-title">
-                            Search
-                            
+                            Add Student
                         </span>
-
-                        <div class="search flex justify-between items-center">
-                            <input class="input_id" type="text" placeholder="Search by ID">
-                            <input class="input_name" type="text" placeholder="Search by Name">
-                            <input class="input_phone" type="text" placeholder="Search by Phone">
-                            <input class="pointer" type="submit" value="SEARCH">
-                        </div>
-                    </div>
-
-                    <div class="box students">
-                        <span class="box-title flex justify-between">
-                            Students    
-                            <a class="add-student flex items-center justify-center" href="./add-student.html">
-                                <i class="fa-solid fa-plus"></i>
-                            </a>
-                        </span>
-
-                        <table cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>DOB</th>
-                                    <th>Gender</th>
-                                    <th>Class</th>
-                                    <th>Parent name</th>
-                                    <th>Mobile number</th>
-                                    <th>Address</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody class="students-data">
-                                <!-- Data Here -->
-                            </tbody>
-                        </table>
+    
+                        <form method="post" action="./student-list.html" onsubmit="addStudent(event)" class="form flex flex-col justify-between items-center">
+                            <input class="input" type="text" placeholder="Name" name="name">
+                            <input class="input" type="date" placeholder="Date Of Birth" name="dob">
+                            <select class="select" name="gender">
+                                <option value="empty" disabled selected>Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <input class="input" type="text" placeholder="Class" name="class">
+                            <input class="input" type="text" placeholder="Parent Name" name="parent-name">
+                            <input class="input" type="tel" placeholder="Mobile Number" name="mobileNumber">
+                            <input class="input" type="text" placeholder="Adress" name="address">
+                            <input class="pointer" type="submit" value="Add">
+                        </form>
                     </div>
                 </div>
             </div>

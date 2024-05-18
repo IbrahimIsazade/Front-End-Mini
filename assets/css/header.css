@@ -16,26 +16,6 @@
   background-image: url(../../assets/images/logo.png);
   background-repeat: no-repeat;
 }
-.wrapper .header .left-part .sidebar-opener {
-  height: 45px;
-  width: 45px;
-  background-color: var(--primary-blue);
-  border: none;
-  border-radius: 10px;
-  margin-left: 30px;
-  transition: all 0.2s;
-}
-.wrapper .header .left-part .sidebar-opener i {
-  color: white;
-  font-size: 20px;
-}
-.wrapper .header .left-part .sidebar-opener:hover {
-  scale: 1.1;
-  background-color: #4f72ff;
-}
-.wrapper .header .left-part .sidebar-opener:active {
-  scale: 1;
-}
 .wrapper .header .left-part .search-bar {
   width: -moz-max-content;
   width: max-content;

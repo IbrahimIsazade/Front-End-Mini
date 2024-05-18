@@ -78,14 +78,46 @@
                     }
                 }
 
-                .students {
+                .search-box {
+                    overflow: hidden;
+                }
+
+                .teachers {
                     margin-top: 20px;
                     width: 100%;
 
                     table {
                         width: 100%;
                     }
+
+                    .add-teacher {
+                        width: 40px;
+                        height: 40px;
+                        background-color: var(--primary-blue);
+                        padding: 10px;
+                        border: none;
+                        border-radius: 50%;
+                        transition: all .2s;
+                        
+                        i {
+                            font-weight: 600;
+                            font-size: 21px;
+                            color: white;
+                        }
+
+                        &:hover {
+                            scale: 1.1;
+                            background-color: #4f72ff;
+                        }
+                        
+                        &:active {
+                            scale: 1;
+                        }
+                        
+                    }
                 }
+
+                
             }
         }
     }

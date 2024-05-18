@@ -1,0 +1,63 @@
+@import url(../css/header.css);
+@import url(../css/sidebar.css);
+@import url(../css/static.css);
+.wrapper .main .content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 30px;
+  margin-top: 60px;
+}
+.wrapper .main .content .page-header {
+  width: 100%;
+  font-weight: 500;
+}
+.wrapper .main .content .page-header .page-welcome {
+  font-size: 22px;
+  color: var(--primary-dark-gray);
+}
+.wrapper .main .content .page-header .page-adress {
+  font-size: 17px;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .boxes .box {
+  max-width: 500px;
+  overflow: hidden;
+}
+.wrapper .main .content .boxes .box .form input,
+.wrapper .main .content .boxes .box .form .select {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  padding-left: 8px;
+  color: var(--primary-gray);
+  font-weight: 500;
+}
+.wrapper .main .content .boxes .box .form input:focus,
+.wrapper .main .content .boxes .box .form .select:focus {
+  outline: 2px var(--primary-blue) solid;
+}
+.wrapper .main .content .boxes .box .form input[type=text],
+.wrapper .main .content .boxes .box .form input[type=tel],
+.wrapper .main .content .boxes .box .form input[type=date],
+.wrapper .main .content .boxes .box .form .select {
+  border: 2px var(--primary-light-gray) solid;
+}
+.wrapper .main .content .boxes .box .form input[type=submit] {
+  font-weight: 600;
+  background-color: var(--primary-blue);
+  padding: 0px 15px;
+  transition: all 0.2s;
+  color: white;
+}
+.wrapper .main .content .boxes .box .form input[type=submit]:hover {
+  scale: 1.1;
+  background-color: #4f72ff;
+}
+.wrapper .main .content .boxes .box .form input[type=submit]:active {
+  scale: 1;
+}
+.wrapper .main .content .boxes .box .form .input,
+.wrapper .main .content .boxes .box .form .select {
+  width: 100%;
+}/*# sourceMappingURL=add-page.css.map */

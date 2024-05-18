@@ -30,13 +30,6 @@ fullscreenBtn.onclick = () => {
     }
 }
 
-// Sidebar opener \\
-const sidebarBtn = document.querySelector(".sidebar-opener");
-const sidebar = document.getElementsByTagName("aside")[0];
-sidebarBtn.onclick = () => {
-    sidebar.classList.toggle("hide");
-}
-
 // Dropdown menus \\
 function showDropdown(e, itemCount) {
     e.parentElement.classList.toggle(`open-${itemCount}`);

@@ -57,10 +57,34 @@
 .wrapper .main .content .boxes .box .search .input_phone {
   width: 340px;
 }
-.wrapper .main .content .boxes .students {
+.wrapper .main .content .boxes .search-box {
+  overflow: hidden;
+}
+.wrapper .main .content .boxes .teachers {
   margin-top: 20px;
   width: 100%;
 }
-.wrapper .main .content .boxes .students table {
+.wrapper .main .content .boxes .teachers table {
   width: 100%;
+}
+.wrapper .main .content .boxes .teachers .add-teacher {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-blue);
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.wrapper .main .content .boxes .teachers .add-teacher i {
+  font-weight: 600;
+  font-size: 21px;
+  color: white;
+}
+.wrapper .main .content .boxes .teachers .add-teacher:hover {
+  scale: 1.1;
+  background-color: #4f72ff;
+}
+.wrapper .main .content .boxes .teachers .add-teacher:active {
+  scale: 1;
 }/*# sourceMappingURL=teachers-list.css.map */

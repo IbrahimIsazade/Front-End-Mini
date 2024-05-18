@@ -27,23 +27,29 @@
 
             .boxes {
                 .box {
-                    .search {
-                        input {
+                    max-width: 500px;
+                    overflow: hidden;
+
+                    .form {
+                        input,
+                        .select {
                             margin-top: 10px;
                             border-radius: 5px;
                             border: none;
                             height: 40px;
                             padding-left: 8px;
-                            
+                            color: var(--primary-gray);
                             font-weight: 500;
-                            margin-left: 20px;
-
+                            
                             &:focus {
                                 outline: 2px var(--primary-blue) solid;
                             }
                         }
                         
-                        input[type="text"] {
+                        input[type="text"],
+                        input[type="tel"],
+                        input[type="date"],
+                        .select {
                             border: 2px var(--primary-light-gray) solid;
                         }
 
@@ -64,53 +70,11 @@
                             }
                         }
 
-                        .input_id {
-                            width: 220px;
-                        }
-
-                        .input_name {
-                            width: 300px;
-                        }
-
-                        .input_phone {
-                            width: 340px;
+                        .input,
+                        .select {
+                            width: 100%;
                         }
                     }
-                }
-
-                .students {
-                    margin-top: 20px;
-                    width: 100%;
-
-                    table {
-                        width: 100%;
-                    }
-                }
-
-                .add-student {
-                    width: 40px;
-                    height: 40px;
-                    background-color: var(--primary-blue);
-                    padding: 10px;
-                    border: none;
-                    border-radius: 50%;
-                    transition: all .2s;
-                    
-                    i {
-                        font-weight: 600;
-                        font-size: 21px;
-                        color: white;
-                    }
-
-                    &:hover {
-                        scale: 1.1;
-                        background-color: #4f72ff;
-                    }
-                    
-                    &:active {
-                        scale: 1;
-                    }
-                    
                 }
             }
         }

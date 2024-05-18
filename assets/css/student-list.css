@@ -63,4 +63,25 @@
 }
 .wrapper .main .content .boxes .students table {
   width: 100%;
+}
+.wrapper .main .content .boxes .add-student {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-blue);
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.wrapper .main .content .boxes .add-student i {
+  font-weight: 600;
+  font-size: 21px;
+  color: white;
+}
+.wrapper .main .content .boxes .add-student:hover {
+  scale: 1.1;
+  background-color: #4f72ff;
+}
+.wrapper .main .content .boxes .add-student:active {
+  scale: 1;
 }/*# sourceMappingURL=student-list.css.map */
