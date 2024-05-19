@@ -18,6 +18,9 @@
         <header class="header flex justify-between items-center">
             <div class="left-part flex justify-between">
                 <a class="logo pointer" href="#"></a>
+                <button class="sidebar-opener">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <div class="search-bar flex items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Search student">
@@ -87,21 +90,20 @@
                     <li class="submenu pointer active open">
                         <div href="#" class="head flex justify-between items-center">
                             
-                            <span class="iconize name">
+                            <span class="name">
                                 <i class="fa-solid fa-house"></i>
-                                Dashboard
+                                <span class="submenu-name">Dashboard</span>
                             </span>
                         </div>
                     </li>
                     
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-graduation-cap"></i>
-                                Students
+                                <span class="submenu-name">Students</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
                             <li class="pointer"><a href="./student-list.html" >Students list</a></li>
@@ -110,13 +112,12 @@
                     </li>
                     
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-chalkboard-user"></i>
-                                Teachers
+                                <span class="submenu-name">Teachers</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
                             <li class="pointer"><a href="./teachers-list.html" >Teachers list</a></li>
@@ -129,28 +130,26 @@
                     </li>
 
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-user-group"></i>
-                                Staff
+                                <span class="submenu-name">Staff</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
-                            <li class="pointer"><a href="#" >Staff list</a></li>
-                            <li class="pointer"><a href="#">Add Employee</a></li>
+                            <li class="pointer"><a href="./staff-list.html" >Staff list</a></li>
+                            <li class="pointer"><a href="./add-employee.html">Add Employee</a></li>
                         </ul>
                     </li>
 
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-newspaper"></i>
-                                Blogs
+                                <span class="submenu-name">Blogs</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
                             <li class="pointer"><a href="#" >All Blogs</a></li>
@@ -162,7 +161,7 @@
                         <a href="#" class="head flex justify-between items-center">
                             <span class="iconize name">
                                 <i class="fa-solid fa-money-bill"></i>
-                                Salary
+                                <span class="submenu-name">Salary</span>
                             </span>
                         </a>
                     </li>
@@ -172,13 +171,12 @@
                     </li>
 
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 4)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 4)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-shield-halved"></i>
-                                Pages
+                                <span class="submenu-name">Pages</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
                             <li class="pointer"><a href="#" >Sign in</a></li>
@@ -192,7 +190,7 @@
             
             <div class="content">
                 <div class="page-header flex justify-between">
-                    <h4 class="page-welcome">Welcome {Username}!</h4>
+                    <h4 class="page-welcome">Welcome Ibrahim</h4>
                     <span class="page-adress">Dashboard</span>
                 </div>
                 <div class="info flex flex-col">
@@ -306,7 +304,45 @@
                     </li>
                 </ul>
 
-                
+                <div class="info flex flex-col">
+                    <ul class="school-info socials flex">
+                        <li class="info-box flex items-center justify-between" style="background-color: #1877F2;">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">Facebook</span>
+                                <span class="info-value">32.4K</span>
+                            </div>
+
+                            <img class="image" src="../assets/images/fackebook.svg" alt="image">
+                        </li>
+
+                        <li class="info-box flex items-center justify-between" style="background-color: #1D9BF0;">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">Twitter</span>
+                                <span class="info-value">48.5K</span>
+                            </div>
+
+                            <img class="image" src="../assets/images/twitter.svg" alt="image">
+                        </li>
+
+                        <li class="info-box flex items-center justify-between" style="background-color: #FE643B;">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">Instagram</span>
+                                <span class="info-value">52K</span>
+                            </div>
+
+                            <img class="image" src="../assets/images/instagram.svg" alt="image">
+                        </li>
+
+                        <li class="info-box flex items-center justify-between" style="background-color: #0A66C2;">
+                            <div class="box-info flex flex-col">
+                                <span class="info-title">LinkedIn</span>
+                                <span class="info-value">69K</span>
+                            </div>
+
+                            <img class="image" src="../assets/images/linkedin.svg" alt="image">
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </main>

@@ -1,0 +1,9 @@
+@import url(../css/header.css);
+@import url(../css/sidebar.css);
+@import url(../css/static.css);
+.wrapper .main .content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 30px;
+  margin-top: 60px;
+}/*# sourceMappingURL=student-profile.css.map */

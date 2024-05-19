@@ -60,4 +60,7 @@
 .wrapper .main .content .boxes .box .form .input,
 .wrapper .main .content .boxes .box .form .select {
   width: 100%;
+}
+.wrapper .main .sidebar.hide + .content {
+  margin-left: 60px;
 }/*# sourceMappingURL=add-page.css.map */

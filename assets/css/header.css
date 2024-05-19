@@ -10,6 +10,26 @@
   width: 25px;
   height: auto;
 }
+.wrapper .header .left-part .sidebar-opener {
+  height: 45px;
+  width: 45px;
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 10px;
+  margin-left: 30px;
+  transition: all 0.2s;
+}
+.wrapper .header .left-part .sidebar-opener i {
+  color: white;
+  font-size: 20px;
+}
+.wrapper .header .left-part .sidebar-opener:hover {
+  scale: 1.1;
+  background-color: #5273f5;
+}
+.wrapper .header .left-part .sidebar-opener:active {
+  scale: 1;
+}
 .wrapper .header .left-part .logo {
   width: 200px;
   height: 45px;

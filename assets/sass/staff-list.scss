@@ -79,7 +79,7 @@
                     }
                 }
 
-                .students {
+                .staff {
                     margin-top: 20px;
                     width: 100%;
 
@@ -88,7 +88,7 @@
                     }
                 }
 
-                .add-student {
+                .add-employee {
                     width: 40px;
                     height: 40px;
                     background-color: var(--primary-blue);
@@ -111,6 +111,7 @@
                     &:active {
                         scale: 1;
                     }
+                    
                     
                 }
             }

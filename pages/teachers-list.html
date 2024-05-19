@@ -18,6 +18,9 @@
         <header class="header flex justify-between items-center">
             <div class="left-part flex justify-between">
                 <a class="logo pointer" href="#"></a>
+                <button class="sidebar-opener">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <div class="search-bar flex items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Search student">
@@ -87,21 +90,20 @@
                     <li class="submenu pointer">
                         <a href="./index.html" class="head flex justify-between items-center">
                             
-                            <span class="iconize name">
+                            <span class="name">
                                 <i class="fa-solid fa-house"></i>
-                                Dashboard
+                                <span class="submenu-name">Dashboard</span>
                             </span>
                         </a>
                     </li>
                     
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-graduation-cap"></i>
-                                Students
+                                <span class="submenu-name">Students</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
                             <li class="pointer"><a href="./student-list.html" >Students list</a></li>
@@ -109,17 +111,16 @@
                         </ul>
                     </li>
                     
-                    <li class="submenu pointer active">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                    <li class="submenu pointer active open">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-chalkboard-user"></i>
-                                Teachers
+                                <span class="submenu-name">Teachers</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
-                            <li class="pointer active-btn"><a href="#" >Teachers list</a></li>
+                            <li class="pointer active-btn"><a href="./teachers-list.html" >Teachers list</a></li>
                             <li class="pointer"><a href="./add-teacher.html">Add Teacher</a></li>
                         </ul>
                     </li>
@@ -129,28 +130,26 @@
                     </li>
 
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-user-group"></i>
-                                Staff
+                                <span class="submenu-name">Staff</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
-                            <li class="pointer"><a href="#" >Staff list</a></li>
-                            <li class="pointer"><a href="#">Add Employee</a></li>
+                            <li class="pointer"><a href="./staff-list.html" >Staff list</a></li>
+                            <li class="pointer"><a href="./add-employee.html">Add Employee</a></li>
                         </ul>
                     </li>
 
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 2)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-newspaper"></i>
-                                Blogs
+                                <span class="submenu-name">Blogs</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
                             <li class="pointer"><a href="#" >All Blogs</a></li>
@@ -162,7 +161,7 @@
                         <a href="#" class="head flex justify-between items-center">
                             <span class="iconize name">
                                 <i class="fa-solid fa-money-bill"></i>
-                                Salary
+                                <span class="submenu-name">Salary</span>
                             </span>
                         </a>
                     </li>
@@ -172,13 +171,12 @@
                     </li>
 
                     <li class="submenu pointer">
-                        <div href="#" onclick="showDropdown(this, 4)" class="head flex justify-between items-center">
+                        <div href="#" onclick="showDropdown(this, 4)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
                                 <i class="fa-solid fa-shield-halved"></i>
-                                Pages
+                                <span class="submenu-name">Pages</span>
                             </span>
-                            <i class="fa-solid fa-chevron-right arrow"></i>
                         </div>
                         <ul>
                             <li class="pointer"><a href="#" >Sign in</a></li>
@@ -211,8 +209,8 @@
                     </div>
 
                     <div class="box teachers">
-                        <span class="box-title flex justify-between">
-                            Students
+                        <span class="box-title flex justify-between items-center">
+                            Teachers
                             <a class="add-teacher flex items-center justify-center" href="./add-teacher.html">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
@@ -223,7 +221,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Name</th>
-                                    <th>Class</th>
+                                    <th>DOB</th>
                                     <th>Gender</th>
                                     <th>Subject</th>
                                     <th>Section</th>

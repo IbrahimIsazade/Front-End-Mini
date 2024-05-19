@@ -1,0 +1,147 @@
+@import url(../css/header.css);
+@import url(../css/sidebar.css);
+@import url(../css/static.css);
+::-webkit-progress-value {
+  background: rebeccapurple;
+}
+
+.wrapper .main .content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 30px;
+  margin-top: 60px;
+}
+.wrapper .main .content .page-header {
+  width: 100%;
+  font-weight: 500;
+}
+.wrapper .main .content .page-header .page-welcome {
+  font-size: 22px;
+  color: var(--primary-dark-gray);
+}
+.wrapper .main .content .page-header .page-adress {
+  font-size: 17px;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .boxes .box {
+  width: 100%;
+  max-height: none;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+}
+.wrapper .main .content .boxes .box .profile .profile-head {
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: var(--primary-light-gray);
+}
+.wrapper .main .content .boxes .box .profile .profile-head > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info {
+  height: 100px;
+  padding: 0px 20px;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info > img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0px 0px 50px 20px;
+  border: 5px white solid;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .personal-info .name {
+  font-size: larger;
+  font-weight: 500;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .personal-info .education {
+  font-weight: 400;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .other-info {
+  width: 30%;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .other-info .info .name {
+  font-weight: 400;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .other-info .info .count {
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .actions {
+  width: 25%;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .actions button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-blue);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .actions button:hover {
+  scale: 1.1;
+  background-color: #5d7dff;
+}
+.wrapper .main .content .boxes .box .profile .profile-head .profile-info .actions button:active {
+  scale: 1;
+}
+.wrapper .main .content .boxes .box .profile .profile-body {
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box {
+  border: 4px var(--primary-light-gray) solid;
+  border-radius: 10px;
+  padding: 30px;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box .box-name,
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box .activities {
+  margin-top: 20px;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box .activities .personal-activity {
+  margin-top: 20px;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box .activities .personal-activity .icon {
+  color: var(--primary-blue);
+  font-size: 18px;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box .activities .personal-activity .info {
+  margin-left: 10px;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box .activities .personal-activity .info .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .profile-box .activities .personal-activity .info .details {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .boxes .box .profile .profile-body .about {
+  width: 70%;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .skills {
+  min-width: 27%;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .skills .skill {
+  margin-top: 10px;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .skills .skill .info {
+  font-weight: 600;
+}
+.wrapper .main .content .boxes .box .profile .profile-body .skills .skill progress {
+  width: 100%;
+}
+.wrapper .main .sidebar.hide + .content {
+  margin-left: 60px;
+}/*# sourceMappingURL=profile.css.map */

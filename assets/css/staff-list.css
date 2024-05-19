@@ -60,14 +60,14 @@
 .wrapper .main .content .boxes .box .search .input_phone {
   width: 355px;
 }
-.wrapper .main .content .boxes .students {
+.wrapper .main .content .boxes .staff {
   margin-top: 20px;
   width: 100%;
 }
-.wrapper .main .content .boxes .students table {
+.wrapper .main .content .boxes .staff table {
   width: 100% !important;
 }
-.wrapper .main .content .boxes .add-student {
+.wrapper .main .content .boxes .add-employee {
   width: 40px;
   height: 40px;
   background-color: var(--primary-blue);
@@ -76,18 +76,18 @@
   border-radius: 50%;
   transition: all 0.2s;
 }
-.wrapper .main .content .boxes .add-student i {
+.wrapper .main .content .boxes .add-employee i {
   font-weight: 600;
   font-size: 21px;
   color: white;
 }
-.wrapper .main .content .boxes .add-student:hover {
+.wrapper .main .content .boxes .add-employee:hover {
   scale: 1.1;
   background-color: #4f72ff;
 }
-.wrapper .main .content .boxes .add-student:active {
+.wrapper .main .content .boxes .add-employee:active {
   scale: 1;
 }
 .wrapper .main .sidebar.hide + .content {
   margin-left: 60px;
-}/*# sourceMappingURL=student-list.css.map */
+}/*# sourceMappingURL=staff-list.css.map */

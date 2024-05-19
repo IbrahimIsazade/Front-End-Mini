@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/add-page.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
     <script src="../assets/js/index.js" defer></script>
-    <script src="../assets/js/add-teacher.js" defer></script>
+    <script src="../assets/js/staff-list.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
     <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
@@ -23,7 +22,7 @@
                 </button>
                 <div class="search-bar flex items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search student">
+                    <input type="text" placeholder="Search employee">
                 </div>
             </div>
 
@@ -97,7 +96,7 @@
                         </a>
                     </li>
                     
-                    <li class="submenu pointer">
+                    <li class="submenu pointer active">
                         <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -111,7 +110,7 @@
                         </ul>
                     </li>
                     
-                    <li class="submenu pointer active">
+                    <li class="submenu pointer">
                         <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -121,7 +120,7 @@
                         </div>
                         <ul>
                             <li class="pointer"><a href="./teachers-list.html" >Teachers list</a></li>
-                            <li class="pointer active-btn"><a href="./add-teacher.html">Add Teacher</a></li>
+                            <li class="pointer"><a href="./add-teacher.html">Add Teacher</a></li>
                         </ul>
                     </li>
 
@@ -190,35 +189,144 @@
             
             <div class="content">
                 <div class="page-header flex justify-between">
-                    <h4 class="page-welcome">Teachers</h4>
-                    <span class="page-adress">Teachers / Add Teacher</span>
+                    <h4 class="page-welcome">Profile</h4>
+                    <span class="page-adress">Table / Profile</span>
                 </div>
-                
-                <div class="boxes flex items-center justify-center">
+
+                <div class="boxes">
+
                     <div class="box">
-                        <span class="box-title">
-                            Add Teacher
+                        <span class="box-title flex items-center">
+                            Profile
                         </span>
-    
-                        <form method="post" action="./teachers-list.html" onsubmit="addTeacher(event)" class="form flex flex-col justify-between items-center">
-                            <input class="input" type="text" placeholder="Name" name="name" required>
-                            <input class="input" type="date" placeholder="Date Of Birth" name="dob" required>
-                            <select class="select" name="gender" required>
-                                <option value="empty" disabled selected>Gender</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                            <input class="input" type="text" placeholder="Subject" name="subject" required>
-                            <select class="select" name="section" required>
-                                <option value="empty" disabled selected>Section</option>
-                                <option value="A">A</option>
-                                <option value="A">B</option>
-                                <option value="A">C</option>
-                            </select>
-                            <input class="input" type="tel" placeholder="Mobile Number" name="mobileNumber" required>
-                            <input class="input" type="text" placeholder="Adress" name="address" required>
-                            <input class="pointer" type="submit" value="Add">
-                        </form>
+
+                        <div class="profile flex flex-col">
+                            <div class="profile-head">
+                                <img src="../assets/images/profile-bg.jpg" alt="bg">
+                                <div class="profile-info flex items-center justify-between">
+                                    <img src="../assets/images/profile-user.jpg" alt="profile">
+                                    <div class="personal-info flex flex-col">
+                                        <span class="name">Jhon Doe</span>
+                                        <span class="education">Computer Science</span>
+                                    </div>
+
+                                    <div class="other-info flex items-center justify-between">
+                                        <div class="info flex flex-col">
+                                            <span class="name">Followers</span>
+                                            <span class="count">2850</span>
+                                        </div>
+                                        <div class="info flex flex-col">
+                                            <span class="name">Followers</span>
+                                            <span class="count">2850</span>
+                                        </div>
+                                        <div class="info flex flex-col">
+                                            <span class="name">Followers</span>
+                                            <span class="count">2850</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions flex items-center justify-between">
+                                        <button>Follow</button>
+                                        <button>Message</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-body flex ">
+                                <div class="profile-box flex flex-col">
+                                    <h4 class="box-name">
+                                        Personal Details:
+                                    </h4>
+                                    <div class="activities">
+                                        <div class="personal-activity flex items-center">
+                                            <i class="fa-regular fa-user icon"></i>
+                                            <div class="info flex flex-col">
+                                                <span class="name">Name</span>
+                                                <span class="details">Jhon Doe</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="personal-activity flex items-center">
+                                            <i class="fa-solid fa-mobile-screen icon"></i>
+                                            <div class="info flex flex-col">
+                                                <span class="name">Mobile</span>
+                                                <span class="details">+994 050 211 11 11</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="personal-activity flex items-center">
+                                            <i class="fa-solid fa-venus-mars icon"></i>
+                                            <div class="info flex flex-col">
+                                                <span class="name">Gender</span>
+                                                <span class="details">Male</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="personal-activity flex items-center">
+                                            <i class="fa-regular fa-calendar icon"></i>
+                                            <div class="info flex flex-col">
+                                                <span class="name">Date of Birth</span>
+                                                <span class="details">19 May 2024</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="personal-activity flex items-center">
+                                            <i class="fa-solid fa-location-dot icon"></i>
+                                            <div class="info flex flex-col">
+                                                <span class="name">Address</span>
+                                                <span class="details">480, Estern Avenue, New York
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="profile-box about flex flex-col">
+                                    <h4 class="box-name">
+                                        About Me
+                                    </h4>
+                                    <h4>Hello I am Jhon Doe</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur officia deserunt mollit anim id est laborum.
+
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                </div>
+
+                                <div class="profile-box skills flex flex-col">
+                                    <h4 class="box-name">
+                                        Skills
+                                    </h4>
+                                    <div>
+                                        <div class="skill flex flex-col">
+                                            <div class="info flex justify-between">
+                                                <span class="skill-name">Coding</span>
+                                                <span class="skill-percent">92%</span>
+                                            </div>
+                                            
+                                            <progress value="92" max="100"></progress>
+                                        </div>
+                                        <div class="skill flex flex-col">
+                                            <div class="info flex justify-between">
+                                                <span class="skill-name">Blender</span>
+                                                <span class="skill-percent">74%</span>
+                                            </div>
+                                            
+                                            <progress style="" value="74" max="100"></progress>
+                                        </div>
+                                        <div class="skill flex flex-col">
+                                            <div class="info flex justify-between">
+                                                <span class="skill-name">C#</span>
+                                                <span class="skill-percent">92%</span>
+                                            </div>
+                                            
+                                            <progress value="92" max="100"></progress>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

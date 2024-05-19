@@ -1,0 +1,188 @@
+@import url(../css/header.css);
+@import url(../css/sidebar.css);
+@import url(../css/static.css);
+
+
+::-webkit-progress-value { background: rebeccapurple; }
+.wrapper {
+    .main {
+        .content {
+            margin-left: 240px;
+            width: calc(100% - 240px);
+            padding: 30px;
+            margin-top: 60px;
+
+            .page-header {
+                width: 100%;
+                font-weight: 500;
+
+                .page-welcome {
+                    font-size: 22px;
+                    color: var(--primary-dark-gray);
+                }
+
+                .page-adress {
+                    font-size: 17px;
+                    color: var(--primary-gray);
+                }
+            }
+
+            .boxes {
+                .box {
+                    width: 100%;
+                    max-height: none;
+                    height: max-content;
+                    overflow: hidden;
+
+                    .profile {
+                        .profile-head {
+                            border-radius: 10px;
+                            margin-top: 20px;
+                            background-color: var(--primary-light-gray);
+
+                            &>img {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 10px;
+                            }
+                            .profile-info {
+                                height: 100px;
+                                padding: 0px 20px;
+
+                                &>img {
+                                    width: 120px;
+                                    height: auto;
+                                    border-radius: 50%;
+                                    margin: 0px 0px 50px 20px;
+                                    border: 5px white solid;
+                                }
+
+                                .personal-info {
+                                    .name {
+                                        font-size: larger;
+                                        font-weight: 500;
+                                    }
+
+                                    .education {
+                                        font-weight: 400;
+                                        color: var(--primary-gray);
+                                    }
+                                }
+
+                                .other-info {
+                                    width: 30%;
+
+                                    .info {
+
+                                        .name {
+                                            font-weight: 400;
+                                            color: var(--primary-gray);
+                                        }
+    
+                                        .count {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+
+                                .actions {
+                                    width: 25%;
+
+                                    button {
+                                        padding: 10px 30px;
+                                        border: none;
+                                        border-radius: 8px;
+                                        background-color: var(--primary-blue);
+                                        color: white;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        transition: all .2s;
+
+                                        &:hover {
+                                            scale: 1.1;
+                                            background-color: #5d7dff;
+                                        }
+                                        
+                                        &:active {
+                                            scale: 1;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+
+                        .profile-body {
+                            margin-top: 10px;
+                            flex-wrap: wrap;
+                            gap: 20px;
+                            
+                            .profile-box {
+                                border: 4px var(--primary-light-gray) solid;
+                                border-radius: 10px;
+                                padding: 30px;
+
+                                .box-name,
+                                h4 {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                }
+
+                                .activities {
+                                    margin-top: 20px;
+                                    .personal-activity {
+                                        margin-top: 20px;
+
+                                        .icon {
+                                            color: var(--primary-blue);
+                                            font-size: 18px;
+                                        }
+
+                                        .info {
+                                            margin-left: 10px;
+
+                                            .name {
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                            }
+
+                                            .details {
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: var(--primary-gray);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .about {
+                                width: 70%;
+                            }
+
+                            .skills {
+                                min-width: 27%;
+                                
+                                .skill {
+                                    margin-top: 10px;
+                                    .info {
+                                        font-weight: 600;
+                                    }
+
+                                    progress {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar.hide + .content {
+            margin-left: 60px;
+        }
+    }
+}

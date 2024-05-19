@@ -1,6 +1,6 @@
-const table = document.querySelector(".students-data");
+const table = document.querySelector(".staff-data");
 
-fetch("http://localhost:3000/students")
+fetch("http://localhost:3000/staff")
 .then(response => response.json())
 .then(data => {
     data.forEach(item => {

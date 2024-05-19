@@ -9,9 +9,42 @@
       "parentName": "PAZA",
       "mobileNumber": "1233123",
       "address": "adress"
+    },
+    {
+      "id": "16bc",
+      "name": "Zakir",
+      "dateOfBirth": "2100-01-01",
+      "gender": "Male",
+      "class": "11 B",
+      "parentName": "PAZA",
+      "mobileNumber": "1233123",
+      "address": "adress"
     }
   ],
-  "teachers": [],
+  "teachers": [
+    {
+      "id": "64f9",
+      "name": "Fikret Qenberov",
+      "dateOfBirth": "2024-05-18",
+      "gender": "Male",
+      "subject": "Azərbaycan dili ",
+      "section": "A",
+      "mobileNumber": "050 997 97 97",
+      "address": "adress"
+    }
+  ],
+  "staff": [
+    {
+      "id": "fdca",
+      "name": "Emin",
+      "dateOfBirth": "2004-02-02",
+      "gender": "Male",
+      "job": "Manager",
+      "salary": "1200",
+      "mobileNumber": "050 997 97 97",
+      "address": "adress"
+    }
+  ],
   "admins": [
     {
       "login": "Ibraim",

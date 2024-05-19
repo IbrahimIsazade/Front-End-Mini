@@ -1,0 +1,30 @@
+@import url(../css/static.css);
+.wrapper h1 {
+  color: var(--primary-blue);
+  font-size: 180px;
+}
+.wrapper .title {
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+}
+.wrapper .title i {
+  color: black;
+}
+.wrapper a {
+  padding: 15px 40px;
+  background-color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  border-radius: 40px;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+.wrapper a:hover {
+  scale: 1.1;
+  background-color: #5273f5;
+}
+.wrapper a:active {
+  scale: 1;
+}/*# sourceMappingURL=404.css.map */

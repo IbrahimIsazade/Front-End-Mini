@@ -19,6 +19,9 @@
   font-size: 17px;
   color: var(--primary-gray);
 }
+.wrapper .main .content .boxes .box {
+  width: 100%;
+}
 .wrapper .main .content .boxes .box .search input {
   margin-top: 10px;
   border-radius: 5px;
@@ -65,7 +68,8 @@
   width: 100%;
 }
 .wrapper .main .content .boxes .teachers table {
-  width: 100%;
+  width: -moz-max-content !important;
+  width: max-content !important;
 }
 .wrapper .main .content .boxes .teachers .add-teacher {
   width: 40px;
@@ -87,4 +91,7 @@
 }
 .wrapper .main .content .boxes .teachers .add-teacher:active {
   scale: 1;
+}
+.wrapper .main .sidebar.hide + .content {
+  margin-left: 60px;
 }/*# sourceMappingURL=teachers-list.css.map */

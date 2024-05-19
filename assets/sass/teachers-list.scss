@@ -27,6 +27,7 @@
 
             .boxes {
                 .box {
+                    width: 100%;
                     .search {
                         input {
                             margin-top: 10px;
@@ -87,7 +88,7 @@
                     width: 100%;
 
                     table {
-                        width: 100%;
+                        width: max-content !important;
                     }
 
                     .add-teacher {
@@ -104,7 +105,7 @@
                             font-size: 21px;
                             color: white;
                         }
-
+    
                         &:hover {
                             scale: 1.1;
                             background-color: #4f72ff;
@@ -114,11 +115,16 @@
                             scale: 1;
                         }
                         
+                        
                     }
                 }
 
                 
             }
+        }
+
+        .sidebar.hide + .content {
+            margin-left: 60px;
         }
     }
 }

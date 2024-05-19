@@ -13,6 +13,15 @@ profile.onclick = () => {
     profile.classList.toggle("active");
 }
 
+// Sidebar opener \\
+const opener = document.querySelector(".sidebar-opener");
+const sidebar = document.querySelector(".sidebar");
+
+opener.onclick = () => {
+    sidebar.classList.toggle("hide");
+}
+
+
 
 // Fullscreen mode \\
 let fullscreenEnabled = false;

@@ -13,6 +13,14 @@ fetch("http://localhost:3000/teachers")
 
             studentRow.appendChild(prop);
         });
+        studentRow.innerHTML += `<td class="action-buttons flex items-center justify-between">
+        <a href="./profile.html" class="action-btn flex justify-center items-center">
+            <i class="fa-regular fa-eye"></i>
+        </a>
+        <a href="#" class="action-btn flex justify-center items-center">
+            <i class="fa-regular fa-pen-to-square"></i>
+        </a>
+    </td>`;
         table.appendChild(studentRow);
     });
 })

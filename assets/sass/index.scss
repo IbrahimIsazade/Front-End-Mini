@@ -64,6 +64,27 @@
                         }
                     }
                 }
+                
+                .socials {
+                    .info-box {
+                        .box-info {
+                            .info-title {
+                                color: white;
+                            }
+                            
+                            .info-value {
+                                
+                                color: white;
+                            }
+                        }
+
+                        img {
+                            border-radius: 10px;
+                            border: 15px white solid;
+                        }
+                    }
+                }
+                
             }
 
             .boxes {
@@ -91,6 +112,8 @@
                     min-width: 500px;
                 }
             }
+
+            
         }
 
         .sidebar.hide + .content {

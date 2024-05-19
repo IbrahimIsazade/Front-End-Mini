@@ -4,9 +4,6 @@
 .wrapper .main {
   width: 100%;
 }
-.wrapper .main .sidebar.hide {
-  transform: translateX(-180px);
-}
 .wrapper .main .sidebar {
   position: fixed;
   width: 240px;
@@ -18,7 +15,8 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .wrapper .main .sidebar .menus {
   height: 100%;
@@ -49,9 +47,6 @@
   font-size: 17px;
   font-weight: 500;
 }
-.wrapper .main .sidebar .menus .submenu .head .arrow {
-  transition: all 0.2s;
-}
 .wrapper .main .sidebar .menus .submenu .head span i {
   margin: 0px 5px 0px 10px;
   font-size: 16px;
@@ -62,6 +57,11 @@
 }
 .wrapper .main .sidebar .menus .submenu .head:hover i {
   color: var(--primary-blue);
+}
+.wrapper .main .sidebar .menus .submenu .head.iconize::after {
+  transition: all 0.2s;
+  content: "\f054";
+  font-size: 16px;
 }
 .wrapper .main .sidebar .menus .submenu ul {
   width: 80%;
@@ -95,17 +95,20 @@
 .wrapper .main .sidebar .menus .submenu ul .active-btn a {
   color: white;
 }
-.wrapper .main .sidebar .menus .open-2 .arrow, .wrapper .main .sidebar .menus .open-3 .arrow, .wrapper .main .sidebar .menus .open-4 .arrow {
+.wrapper .main .sidebar .menus .submenu.active .head::after {
+  color: var(--primary-blue);
+}
+.wrapper .main .sidebar .menus .open-2 .head::after, .wrapper .main .sidebar .menus .open-3 .head::after, .wrapper .main .sidebar .menus .open-4 .head::after {
   transform: rotateZ(90deg);
 }
 .wrapper .main .sidebar .menus .open-2 {
-  height: 135px;
+  height: 135px !important;
 }
 .wrapper .main .sidebar .menus .open-3 {
-  height: 180px;
+  height: 180px !important;
 }
 .wrapper .main .sidebar .menus .open-4 {
-  height: 220px;
+  height: 220px !important;
 }
 .wrapper .main .sidebar .menus .active::before {
   content: "";
@@ -120,5 +123,44 @@
   color: var(--primary-blue);
 }
 .wrapper .main .sidebar:hover {
-  transform: translateX(0px);
+  width: 240px;
+}
+.wrapper .main .sidebar:hover li[class*=open-] {
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+.wrapper .main .sidebar:hover li[class*=open-] ul {
+  display: block;
+}
+.wrapper .main .sidebar.hide {
+  width: 70px;
+}
+.wrapper .main .sidebar.hide .head::after {
+  display: none;
+}
+.wrapper .main .sidebar.hide .head .submenu-name {
+  display: none;
+}
+.wrapper .main .sidebar.hide .menu-title {
+  display: none;
+}
+.wrapper .main .sidebar.hide .open-2,
+.wrapper .main .sidebar.hide .open-3,
+.wrapper .main .sidebar.hide .open-4 {
+  height: 50px !important;
+}
+.wrapper .main .sidebar.hide:hover {
+  width: 240px;
+}
+.wrapper .main .sidebar.hide:hover .head::after {
+  display: inline;
+}
+.wrapper .main .sidebar.hide:hover .head .submenu-name {
+  display: inline;
+}
+.wrapper .main .sidebar.hide:hover .menu-title {
+  display: inline;
+}
+.wrapper .main .sidebar.hide:hover .submenu ul {
+  display: block;
 }/*# sourceMappingURL=sidebar.css.map */

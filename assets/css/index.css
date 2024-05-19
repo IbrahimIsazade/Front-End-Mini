@@ -50,6 +50,16 @@
   border-radius: 8px;
   scale: 0.9;
 }
+.wrapper .main .content .info .socials .info-box .box-info .info-title {
+  color: white;
+}
+.wrapper .main .content .info .socials .info-box .box-info .info-value {
+  color: white;
+}
+.wrapper .main .content .info .socials .info-box img {
+  border-radius: 10px;
+  border: 15px white solid;
+}
 .wrapper .main .content .boxes {
   margin-top: 20px;
   flex-wrap: wrap;

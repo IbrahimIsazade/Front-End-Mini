@@ -13,6 +13,31 @@
         }
 
         .left-part {
+
+            .sidebar-opener {
+                height: 45px;
+                width: 45px;
+                background-color: var(--primary-blue);
+                border: none;
+                border-radius: 10px;
+                margin-left: 30px;
+                transition: all .2s;
+
+                i {
+                    color: white;
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    scale: 1.1;
+                    background-color: #5273f5;
+                }
+                
+                &:active {
+                    scale: 1;
+                }
+            }
+            
             .logo {
                 width: 200px;
                 height: 45px;

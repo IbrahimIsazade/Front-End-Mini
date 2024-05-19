@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/add-page.css">
+    <link rel="stylesheet" href="../assets/css/staff-list.css">
     <script src="../assets/js/index.js" defer></script>
-    <script src="../assets/js/add-teacher.js" defer></script>
+    <script src="../assets/js/staff-list.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
     <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
@@ -23,7 +23,7 @@
                 </button>
                 <div class="search-bar flex items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search student">
+                    <input type="text" placeholder="Search employee">
                 </div>
             </div>
 
@@ -111,7 +111,7 @@
                         </ul>
                     </li>
                     
-                    <li class="submenu pointer active">
+                    <li class="submenu pointer">
                         <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -121,7 +121,7 @@
                         </div>
                         <ul>
                             <li class="pointer"><a href="./teachers-list.html" >Teachers list</a></li>
-                            <li class="pointer active-btn"><a href="./add-teacher.html">Add Teacher</a></li>
+                            <li class="pointer"><a href="./add-teacher.html">Add Teacher</a></li>
                         </ul>
                     </li>
 
@@ -129,7 +129,7 @@
                         <span>Management</span>
                     </li>
 
-                    <li class="submenu pointer">
+                    <li class="submenu pointer active open">
                         <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -138,7 +138,7 @@
                             </span>
                         </div>
                         <ul>
-                            <li class="pointer"><a href="./staff-list.html" >Staff list</a></li>
+                            <li class="pointer active-btn"><a href="./staff-list.html" >Staff list</a></li>
                             <li class="pointer"><a href="./add-employee.html">Add Employee</a></li>
                         </ul>
                     </li>
@@ -190,35 +190,49 @@
             
             <div class="content">
                 <div class="page-header flex justify-between">
-                    <h4 class="page-welcome">Teachers</h4>
-                    <span class="page-adress">Teachers / Add Teacher</span>
+                    <h4 class="page-welcome">Staff</h4>
+                    <span class="page-adress">Staff / Staff List</span>
                 </div>
-                
-                <div class="boxes flex items-center justify-center">
+
+                <div class="boxes">
                     <div class="box">
                         <span class="box-title">
-                            Add Teacher
+                            Search
                         </span>
-    
-                        <form method="post" action="./teachers-list.html" onsubmit="addTeacher(event)" class="form flex flex-col justify-between items-center">
-                            <input class="input" type="text" placeholder="Name" name="name" required>
-                            <input class="input" type="date" placeholder="Date Of Birth" name="dob" required>
-                            <select class="select" name="gender" required>
-                                <option value="empty" disabled selected>Gender</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                            <input class="input" type="text" placeholder="Subject" name="subject" required>
-                            <select class="select" name="section" required>
-                                <option value="empty" disabled selected>Section</option>
-                                <option value="A">A</option>
-                                <option value="A">B</option>
-                                <option value="A">C</option>
-                            </select>
-                            <input class="input" type="tel" placeholder="Mobile Number" name="mobileNumber" required>
-                            <input class="input" type="text" placeholder="Adress" name="address" required>
-                            <input class="pointer" type="submit" value="Add">
-                        </form>
+
+                        <div class="search flex justify-between items-center">
+                            <input class="input_id" type="text" placeholder="Search by ID">
+                            <input class="input_name" type="text" placeholder="Search by Name">
+                            <input class="input_phone" type="text" placeholder="Search by Phone">
+                            <input class="pointer" type="submit" value="SEARCH">
+                        </div>
+                    </div>
+
+                    <div class="box staff">
+                        <span class="box-title flex justify-between items-center">
+                            Staff    
+                            <a class="add-employee flex items-center justify-center" href="./add-employee.html">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </span>
+
+                        <table cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>DOB</th>
+                                    <th>Gender</th>
+                                    <th>Job</th>
+                                    <th>Salary</th>
+                                    <th>Mobile number</th>
+                                    <th>Address</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="staff-data">
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

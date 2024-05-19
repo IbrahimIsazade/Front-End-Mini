@@ -1,8 +1,8 @@
-function addTeacher(e) {
+function addEmployee(e) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     
-    fetch("http://localhost:3000/teachers", {
+    fetch("http://localhost:3000/staff", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -11,12 +11,12 @@ function addTeacher(e) {
             "name": form.get('name'),
             "dateOfBirth": form.get('dob'),
             "gender": form.get('gender'),
-            "subject": form.get('subject'),
-            "section": form.get('section'),
+            "job": form.get('job'),
+            "salary": form.get('salary'),
             "mobileNumber": form.get('mobileNumber'),
             "address": form.get('address')
         })
     }).then(r => {
-        window.location.href = "/pages/teachers-list.html";
-    })
+        window.location.href = "/pages/staff-list.html";
+    }).catch(e => console.log(e))
 }
