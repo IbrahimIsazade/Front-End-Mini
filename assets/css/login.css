@@ -1,0 +1,174 @@
+@import url(../css/static.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper .login-box {
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 10px -8px;
+  overflow: hidden;
+}
+.wrapper .login-box .image-box {
+  position: relative;
+  width: 50%;
+  background-color: #18AEFA;
+  border-radius: 0px 20px 20px 0px;
+}
+.wrapper .login-box .image-box * {
+  position: absolute;
+}
+.wrapper .login-box .image-box .boy {
+  width: 100%;
+  height: auto;
+  align-self: flex-end;
+}
+.wrapper .login-box .image-box::before {
+  content: "";
+  width: 144px;
+  height: 144px;
+  background-image: url(../images/login-ico1.png);
+}
+.wrapper .login-box .image-box::after {
+  content: "";
+  width: 144px;
+  height: 144px;
+  margin-left: 120px;
+  background-image: url(../images/login-ico2.png);
+}
+.wrapper .login-box .login-form {
+  padding: 30px;
+  width: 100%;
+}
+.wrapper .login-box .login-form a {
+  color: #18AEFA;
+}
+.wrapper .login-box .login-form .head-part h4 {
+  font-size: 22px;
+}
+.wrapper .login-box .login-form .head-part span {
+  color: var(--primary-gray);
+  font-size: 14px;
+}
+.wrapper .login-box .login-form .body-part {
+  margin-top: 40px;
+}
+.wrapper .login-box .login-form .body-part .form h5 {
+  font-size: 20px;
+}
+.wrapper .login-box .login-form .body-part .form .input-box {
+  margin-top: 15px;
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px #d1d1d1 solid;
+  padding: 0px 8px;
+}
+.wrapper .login-box .login-form .body-part .form .input-box input {
+  border: none;
+  width: 90%;
+  height: 80%;
+  font-size: 15px;
+}
+.wrapper .login-box .login-form .body-part .form .input-box input:focus {
+  outline: none;
+}
+.wrapper .login-box .login-form .body-part .form .input-box .placeholder {
+  position: absolute;
+  font-size: smaller;
+  font-weight: 500;
+  color: #ABABAB;
+  background-color: white;
+  padding: 0px 5px;
+  margin-top: -45px;
+  margin-left: 5px;
+}
+.wrapper .login-box .login-form .body-part .form .input-box .placeholder::after {
+  content: " *";
+  color: #FF0000;
+}
+.wrapper .login-box .login-form .body-part .form .username::after {
+  content: "\f007";
+  font-size: small;
+}
+.wrapper .login-box .login-form .body-part .form .password::after {
+  content: "\f06e";
+  font-size: small;
+  cursor: pointer;
+}
+.wrapper .login-box .login-form .body-part .form .other-buttons {
+  margin-top: 20px;
+  color: var(--primary-gray);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.wrapper .login-box .login-form .body-part .form .login {
+  height: 40px;
+  background-color: var(--primary-blue);
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: large;
+  transition: all 0.2s;
+}
+.wrapper .login-box .login-form .body-part .form .login:hover {
+  scale: 1.05;
+  background-color: #5273f5;
+}
+.wrapper .login-box .login-form .body-part .form .login:active {
+  scale: 1;
+}
+.wrapper .login-box .login-form .body-part > span {
+  margin-top: 15px;
+  color: #ABABAB;
+  text-align: center;
+}
+.wrapper .login-box .login-form .body-part > span::after {
+  content: "";
+  display: block;
+  width: 140px;
+  margin-left: 10px;
+  height: 1px;
+  background-color: #d1d1d1;
+}
+.wrapper .login-box .login-form .body-part > span::before {
+  content: "";
+  display: block;
+  width: 140px;
+  margin-right: 10px;
+  height: 1px;
+  background-color: #d1d1d1;
+}
+.wrapper .login-box .login-form .body-part .alt-login {
+  width: 50%;
+  align-self: center;
+  margin-top: 20px;
+}
+.wrapper .login-box .login-form .body-part .alt-login i {
+  color: black;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #d1d1d1;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .login-box .login-form .body-part .alt-login i:hover {
+  background-color: #5273f5;
+  color: white;
+}
+.wrapper .login-box .login-form .body-part .alt-login i:hover {
+  scale: 1.1;
+  background-color: #5273f5;
+}
+.wrapper .login-box .login-form .body-part .alt-login i:active {
+  scale: 1;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
+    <title>Student Management</title>
+</head>
+<body style="background-color: #F7F7FA;">
+    <div class="wrapper flex flex-col items-center justify-center" style="background-color: #F7F7FA; height: 100vh; overflow: hidden;">
+        <div class="login-box flex">
+            <div class="image-box flex">
+                <img class="boy" src="../assets/images/login.png" alt="login-boy">
+            </div>
+            <div class="login-form flex flex-col">
+                <div class="head-part flex-col items-center">
+                    <h4>Welcome to Preskool</h4>
+                    <span>Need an account?<a href="./signup.html"> Sign Up</a></span>
+                </div>
+                <div class="body-part flex flex-col justify-center">
+                    <form action="#" class="form flex flex-col">
+                        <h5>Sign in</h5>
+
+                        <div class="input-box username flex items-center iconize">
+                            <span class="placeholder">Username</span>
+                            <input type="text" name="username">
+                        </div>
+
+                        <div class="input-box password flex items-center iconize">
+                            <span class="placeholder">Password</span>
+                            <input type="text" name="password">
+                        </div>
+
+                        <div class="other-buttons flex items-center justify-between">
+                            <div class="remember-me">
+                                <input type="checkbox" name="remember-me" id="remember">
+                                <label class="pointer" for="remember">Remember Me</label>
+                            </div>
+                            <a href="./forgotpass.html">Forgot Password?</a>
+                        </div>
+
+                        <button class="login">Login</button>
+                    </form>
+
+                    <span class="flex items-center justify-center">OR</span>
+
+                    <div class="alt-login flex items-center justify-between">
+                        <i class="fa-brands fa-google pointer"></i>
+                        <i class="fa-brands fa-facebook-f pointer"></i>
+                        <i class="fa-brands fa-x-twitter pointer"></i>
+                        <i class="fa-brands fa-linkedin-in pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

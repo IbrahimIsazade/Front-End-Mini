@@ -15,7 +15,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 .wrapper .main .sidebar .menus {
