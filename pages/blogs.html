@@ -1,0 +1,564 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/blogs.css">
+    <script src="../assets/js/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
+    <title>Student Management</title>
+</head>
+<body style="background-color: #F7F7FA;">
+    <div class="wrapper flex flex-col" style="background-color: #F7F7FA;">
+        
+        <!-- HEADER -->
+        <header class="header flex justify-between items-center">
+            <div class="left-part flex justify-between">
+                <a class="logo pointer" href="#"></a>
+                <button class="sidebar-opener">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="search-bar flex items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search employee">
+                </div>
+            </div>
+
+            <div class="right-part flex items-center justify-between">
+                <ul class="buttons flex">
+                    <li>
+                        <button class="btn-rounded language">
+                            <img src="../assets/images/american-flag.png" alt="usa">
+                            <ul class="other-languages flex flex-col">
+                                <li class="flex justify-between">
+                                    <img src="../assets/images/uk-flag.png" alt="">
+                                    <span>English</span>
+                                </li>
+                                <hr style="margin: 5px 0px; width: 100%;">
+    
+                                <li class="flex justify-between">
+                                    <img src="../assets/images/france-flag.png" alt="">
+                                    <span>Française</span>
+                                </li>
+                                <hr style="margin: 5px 0px; width: 100%;">
+                                
+                                <li class="flex justify-between">
+                                    <img src="../assets/images/turkey-flag.png" alt="">
+                                    <span>Türkçe</span>
+                                </li>
+                            </ul>
+                        </button>
+                    </li>
+    
+                    <li>
+                        <button class="btn-rounded fullscreen">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="profile flex items-center pointer">
+                    <div class="profile-avatar flex justify-center items-center">
+                        <img class="pointer" src="../assets/images/avatar.jpg" alt="avatar">
+                    </div>
+                    <div class="profile-info flex flex-col">
+                        <span class="name">Ibrahim Isazade</span>
+                        <span class="job">Administrator</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="settings">
+                        <li><a href="">My profile</a></li>
+                        <hr style="margin: 2px 0px;">
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+
+        <!-- CONTENT -->
+        <main class="main flex">
+            <aside class="sidebar">
+                <ul class="menus">
+                    <li class="menu-title flex items-center">
+                        <span>Main Menu</span>
+                    </li>
+                    
+                    <li class="submenu pointer">
+                        <a href="./index.html" class="head flex justify-between items-center">
+                            
+                            <span class="name">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="submenu-name">Dashboard</span>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li class="submenu pointer">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span class="submenu-name">Students</span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li class="pointer"><a href="./student-list.html" >Students list</a></li>
+                            <li class="pointer"><a href="./add-student.html">Add Student</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="submenu pointer">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                <span class="submenu-name">Teachers</span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li class="pointer"><a href="./teachers-list.html" >Teachers list</a></li>
+                            <li class="pointer"><a href="./add-teacher.html">Add Teacher</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-title flex items-center">
+                        <span>Management</span>
+                    </li>
+
+                    <li class="submenu pointer">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span class="submenu-name">Staff</span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li class="pointer"><a href="./staff-list.html" >Staff list</a></li>
+                            <li class="pointer"><a href="./add-employee.html">Add Employee</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu pointer active">
+                        <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <span class="submenu-name">Blogs</span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li class="pointer active-btn"><a href="#" >All Blogs</a></li>
+                            <li class="pointer"><a href="#">Add Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu pointer">
+                        <a href="#" class="head flex justify-between items-center">
+                            <span class="iconize name">
+                                <i class="fa-solid fa-money-bill"></i>
+                                <span class="submenu-name">Salary</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title flex items-center">
+                        <span>Other</span>
+                    </li>
+
+                    <li class="submenu pointer">
+                        <div href="#" onclick="showDropdown(this, 4)" class="head iconize flex justify-between items-center">
+                            
+                            <span class="iconize name">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span class="submenu-name">Pages</span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li class="pointer"><a href="./login.html" >Log in</a></li>
+                            <li class="pointer"><a href="#">Sign up</a></li>
+                            <li class="pointer"><a href="#">Reset password</a></li>
+                            <li class="pointer"><a href="./404.html">Not found</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            
+            <div class="content">
+                <div class="page-header flex justify-between">
+                    <h4 class="page-welcome">Blogs</h4>
+                    <span class="page-adress">All Blogs / Blogs</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                    <div class="box blog flex flex-col">
+                        <div  class="blog-img pointer">
+                            <img src="https://picsum.photos/300/150" alt="blog-img">
+                        </div>
+                        
+                        <div class="publisher flex items-center">
+                            <img src="https://i.pravatar.cc/300" class="profile-img" alt="Profile">
+                            <div class="other-info flex flex-col">
+                                <a href="./profile.html" class="name">Jhon Doe</a>
+                                <span class="date"><i class="fa-regular fa-clock"></i>22 May 2024</span>
+                            </div>
+                        </div>
+
+                        <span class="blog-desc flex flex-col">
+                            <span class="short-name">Here will be blog name</span>
+                            Then here will be the description.
+                        </span>
+
+                        <div class="blog-info flex items-center justify-between">
+                            <div class="actions flex justify-between items-center">
+                                <a class="btn edit flex items-center pointer">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Edit
+                                </a>
+                                <button class="btn delete flex items-center">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                    Delete
+                                </button>
+                            </div>
+                            
+                            <span class="status iconize">Inactive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

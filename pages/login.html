@@ -20,17 +20,17 @@
                     <span>Need an account?<a href="./signup.html"> Sign Up</a></span>
                 </div>
                 <div class="body-part flex flex-col justify-center">
-                    <form action="#" class="form flex flex-col">
+                    <form onsubmit="redirect()" action="./index.html" class="form flex flex-col">
                         <h5>Sign in</h5>
 
                         <div class="input-box username flex items-center iconize">
                             <span class="placeholder">Username</span>
-                            <input type="text" name="username">
+                            <input type="text" name="username" required>
                         </div>
 
                         <div class="input-box password flex items-center iconize">
                             <span class="placeholder">Password</span>
-                            <input type="text" name="password">
+                            <input type="text" name="password" required>
                         </div>
 
                         <div class="other-buttons flex items-center justify-between">
@@ -41,7 +41,7 @@
                             <a href="./forgotpass.html">Forgot Password?</a>
                         </div>
 
-                        <button class="login">Login</button>
+                        <input type="submit" href="./index.html" value="Login" class="login flex justify-center items-center pointer">
                     </form>
 
                     <span class="flex items-center justify-center">OR</span>

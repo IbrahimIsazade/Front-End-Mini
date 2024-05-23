@@ -108,6 +108,7 @@
                                 color: #FF0000;
                             }
                         }
+
                     }
 
                     .username {
@@ -119,12 +120,13 @@
 
                     .password {
                         &::after {
-                            content: "\f06e";
+                            content: "\f023";
                             font-size: small;
-                            cursor: pointer;
                         }
                     }
 
+
+                    
                     .other-buttons  {
                         margin-top: 20px;
                         color: var(--primary-gray);

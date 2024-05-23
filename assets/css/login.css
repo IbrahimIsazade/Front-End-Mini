@@ -95,9 +95,8 @@
   font-size: small;
 }
 .wrapper .login-box .login-form .body-part .form .password::after {
-  content: "\f06e";
+  content: "\f023";
   font-size: small;
-  cursor: pointer;
 }
 .wrapper .login-box .login-form .body-part .form .other-buttons {
   margin-top: 20px;

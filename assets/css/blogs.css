@@ -1,0 +1,112 @@
+@import url(../css/header.css);
+@import url(../css/sidebar.css);
+@import url(../css/static.css);
+.wrapper .main .content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  padding: 30px;
+  margin-top: 60px;
+}
+.wrapper .main .content .page-header {
+  width: 100%;
+  font-weight: 500;
+}
+.wrapper .main .content .page-header .page-welcome {
+  font-size: 22px;
+  color: var(--primary-dark-gray);
+}
+.wrapper .main .content .page-header .page-adress {
+  font-size: 17px;
+  color: var(--primary-gray);
+}
+.wrapper .main .content .boxes {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 20px;
+}
+.wrapper .main .content .boxes .box {
+  display: inline-block;
+  max-width: 300px;
+  min-width: 300px;
+}
+.wrapper .main .content .boxes .box .blog-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wrapper .main .content .boxes .box .blog-img img {
+  width: 100%;
+  height: 150px;
+  transition: all 1s;
+}
+.wrapper .main .content .boxes .box .blog-img img:hover {
+  scale: 1.1;
+}
+.wrapper .main .content .boxes .box .publisher {
+  margin-top: 20px;
+}
+.wrapper .main .content .boxes .box .publisher .profile-img {
+  border-radius: 8px;
+}
+.wrapper .main .content .boxes .box .publisher .other-info {
+  margin-left: 10px;
+}
+.wrapper .main .content .boxes .box .publisher .other-info .name {
+  transition: all 0.2s;
+  font-weight: 500;
+}
+.wrapper .main .content .boxes .box .publisher .other-info .name:hover {
+  color: var(--primary-blue);
+}
+.wrapper .main .content .boxes .box .publisher .other-info .date {
+  color: var(--primary-gray);
+  font-size: small;
+}
+.wrapper .main .content .boxes .box .publisher .other-info .date i {
+  margin-right: 5px;
+}
+.wrapper .main .content .boxes .box .blog-desc {
+  margin-top: 10px;
+  color: var(--primary-gray);
+  font-size: 14px;
+}
+.wrapper .main .content .boxes .box .blog-desc .short-name {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
+.wrapper .main .content .boxes .box .blog-info .actions {
+  margin-top: 10px;
+  width: 55%;
+}
+.wrapper .main .content .boxes .box .blog-info .actions .btn {
+  border-radius: 5px;
+  padding: 2px 8px;
+  transition: all 0.2s;
+}
+.wrapper .main .content .boxes .box .blog-info .actions .btn:hover {
+  scale: 1.1;
+}
+.wrapper .main .content .boxes .box .blog-info .actions .edit,
+.wrapper .main .content .boxes .box .blog-info .actions .edit i {
+  background-color: #CEF5DB;
+  color: #699834;
+}
+.wrapper .main .content .boxes .box .blog-info .actions .edit i,
+.wrapper .main .content .boxes .box .blog-info .actions .edit i i {
+  font-size: small;
+  margin-right: 5px;
+}
+.wrapper .main .content .boxes .box .blog-info .actions .delete,
+.wrapper .main .content .boxes .box .blog-info .actions .delete i {
+  background-color: #FFE5E5;
+  color: #E84646;
+  border: none;
+  font-size: 16px;
+}
+.wrapper .main .content .boxes .box .blog-info .actions .delete i,
+.wrapper .main .content .boxes .box .blog-info .actions .delete i i {
+  font-size: small;
+  margin-right: 5px;
+}/*# sourceMappingURL=blogs.css.map */
