@@ -1,5 +1,8 @@
-const table = document.querySelector(".students-data");
+const table = document.querySelector(".data");
 const searchBtn = document.querySelector(".search-btn");
+const TABLE_URL = "students";
+
+console.log(TABLE_URL);
 
 function fillTableWith(data) {
     table.innerHTML = ``;
@@ -28,7 +31,7 @@ function fillTableWith(data) {
     });
 }
 
-fetch("http://localhost:3000/students")
+fetch(`http://localhost:3000/${TABLE_URL}`)
 .then(response => response.json())
 .then(data => fillTableWith(data))
 
@@ -52,13 +55,13 @@ function performSearch() {
     const phoneInpt = document.querySelector(".input_phone").value;
 
     if (idInpt == "" && nameInpt == "" && phoneInpt == "") {
-        fetch("http://localhost:3000/students")
+        fetch(`http://localhost:3000/${TABLE_URL}`)
         .then(response => response.json())
         .then(data => fillTableWith(data))
         return;
     }
     else if (idInpt != "") {
-        fetch(`http://localhost:3000/students/${idInpt}`)
+        fetch(`http://localhost:3000/${TABLE_URL}/${idInpt}`)
         .then(response => {
             if (!response.ok) {
                 if (response.status === 404) {
@@ -77,55 +80,35 @@ function performSearch() {
         return;
     }
     else if (phoneInpt != "") {
-        fetch(`http://localhost:3000/students/?mobileNumber=${phoneInpt}`)
-        .then(response => {
-            if (!response.ok) {
-                if (response.status === 404) {
-                    throw new Error('Student not found (404)');
-                } else if (response.status === 500) {
-                    throw new Error('Server error (500)');
-                } else {
-                    throw new Error(`Unexpected error: ${response.status}`);
-                }
-            }
-            return response.json();
-        })
+        fetch(`http://localhost:3000/${TABLE_URL}/?mobileNumber=${phoneInpt}`)
+        .then(response => response.json())
         .then(data => {
-            if (data.length > 1) {
-                fillTableWith(data)
+            if (data.length == 0) {
+                throw new Error('Student not found (404)');
             } else {
-                fillTableWith([data])
+                fillTableWith(data);
             }
         })
+        .catch(error => alert(error.message));
         return;
     }
     else if (nameInpt != "") {
-        fetch(`http://localhost:3000/students/?name=${nameInpt}`)
-        .then(response => {
-            if (!response.ok) {
-                if (response.status === 404) {
-                    throw new Error('Student not found (404)');
-                } else if (response.status === 500) {
-                    throw new Error('Server error (500)');
-                } else {
-                    throw new Error(`Unexpected error: ${response.status}`);
-                }
-            }
-            return response.json();
-        })
+        fetch(`http://localhost:3000/${TABLE_URL}/?name=${nameInpt}`)
+        .then(response => response.json())
         .then(data => {
-            if (data.length > 1) {
-                fillTableWith(data)
+            if (data.length == 0) {
+                throw new Error('Student not found (404)');
             } else {
-                fillTableWith([data])
+                fillTableWith(data);
             }
         })
+        .catch(error => alert(error.message));
         return;
     }
 
 }
 
 // Wrap the search function with debounce
-const debouncedSearch = debounce(performSearch, 1000);
+const debouncedSearch = debounce(performSearch, 300);
 
 searchBtn.onclick = debouncedSearch;

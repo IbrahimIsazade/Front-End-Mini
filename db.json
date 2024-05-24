@@ -43,12 +43,23 @@
       "salary": "1200",
       "mobileNumber": "050 997 97 97",
       "address": "adress"
+    },
+    {
+      "id": "6360",
+      "name": "Vasif Aliev",
+      "dateOfBirth": "2024-05-10",
+      "gender": "Male",
+      "job": "Jaintor",
+      "salary": "500",
+      "mobileNumber": "050 997 97 97",
+      "address": "adress"
     }
   ],
   "admins": [
     {
       "login": "Ibraim",
-      "password": "admin123"
+      "password": "admin123",
+      "id": "24ea"
     }
   ]
 }
