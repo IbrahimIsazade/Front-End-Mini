@@ -6,6 +6,7 @@
   width: calc(100% - 240px);
   padding: 30px;
   margin-top: 60px;
+  transition: all 0.2s;
 }
 .wrapper .main .content .page-header {
   width: 100%;
@@ -85,4 +86,5 @@
 }
 .wrapper .main .sidebar.hide + .content {
   margin-left: 60px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

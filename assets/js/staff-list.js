@@ -22,7 +22,7 @@ function fillTableWith(data) {
             <a href="./profile.html" class="action-btn flex justify-center items-center">
                 <i class="fa-regular fa-eye"></i>
             </a>
-            <a href="#" class="action-btn flex justify-center items-center">
+            <a href="./edit-employee.html?Id=${valuesArray[0]}" class="action-btn flex justify-center items-center">
                 <i class="fa-regular fa-pen-to-square"></i>
             </a>
         </td>`;

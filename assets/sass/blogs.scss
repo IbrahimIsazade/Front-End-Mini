@@ -9,6 +9,7 @@
             width: calc(100% - 240px);
             padding: 30px;
             margin-top: 60px;
+            transition: all .2s;
 
             .page-header {
                 width: 100%;
@@ -30,9 +31,10 @@
                 row-gap: 20px;
                 
                 .box {
-                    display: inline-block;
+                    justify-content: space-between;
                     max-width: 300px;
                     min-width: 300px;
+                    min-height: 350px;
 
                     .blog-img {
                         width: 100%;

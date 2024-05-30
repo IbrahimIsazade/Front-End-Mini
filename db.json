@@ -12,12 +12,12 @@
     },
     {
       "id": "16bc",
-      "name": "Zakir",
-      "dateOfBirth": "2100-01-01",
-      "gender": "Male",
-      "class": "11 B",
-      "parentName": "PAZA",
-      "mobileNumber": "1233123",
+      "name": "asdas",
+      "dateOfBirth": "2024-05-17",
+      "gender": "Female",
+      "class": "clas",
+      "parentName": "Parent",
+      "mobileNumber": "mobil",
       "address": "adress"
     }
   ],
@@ -53,6 +53,16 @@
       "salary": "500",
       "mobileNumber": "050 997 97 97",
       "address": "adress"
+    },
+    {
+      "id": "0aa1",
+      "name": "عبّاس عبد العزيز",
+      "dateOfBirth": "2001-09-11",
+      "gender": "Male",
+      "job": "Engineer",
+      "salary": "9000",
+      "mobileNumber": "077 486 86 96",
+      "address": "Twin Towers"
     }
   ],
   "admins": [
