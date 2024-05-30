@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const ID = urlParams.get('Id');
 const BASE_URL = "students";
 
-function addStudent(e) {
+function editStudent(e) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     
@@ -22,6 +22,6 @@ function addStudent(e) {
             "address": form.get('address')
         })
     }).then(r => {
-        window.location.href = "/pages/student-list.html";
+        window.location.href = "/pages/teacher-list.html";
     })
 }

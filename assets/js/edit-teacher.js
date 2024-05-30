@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const ID = urlParams.get('Id');
 const BASE_URL = "teachers";
 
-function addStudent(e) {
+function editTeacher(e) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     

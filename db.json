@@ -24,8 +24,8 @@
   "teachers": [
     {
       "id": "64f9",
-      "name": "Fikret Qenberov",
-      "dateOfBirth": "2024-05-18",
+      "name": "New name",
+      "dateOfBirth": "1997-02-05",
       "gender": "Male",
       "subject": "Azərbaycan dili ",
       "section": "A",
@@ -37,12 +37,13 @@
     {
       "id": "fdca",
       "name": "Emin",
-      "dateOfBirth": "2004-02-02",
+      "dateOfBirth": "2024-05-23",
       "gender": "Male",
-      "job": "Manager",
-      "salary": "1200",
+      "job": "Jaintor",
+      "salary": "500",
       "mobileNumber": "050 997 97 97",
-      "address": "adress"
+      "address": "adress",
+      "salary-paid": false
     },
     {
       "id": "6360",
@@ -52,7 +53,8 @@
       "job": "Jaintor",
       "salary": "500",
       "mobileNumber": "050 997 97 97",
-      "address": "adress"
+      "address": "adress",
+      "salary-paid": false
     },
     {
       "id": "0aa1",
@@ -62,7 +64,8 @@
       "job": "Engineer",
       "salary": "9000",
       "mobileNumber": "077 486 86 96",
-      "address": "Twin Towers"
+      "address": "Twin Towers",
+      "salary-paid": false
     }
   ],
   "admins": [

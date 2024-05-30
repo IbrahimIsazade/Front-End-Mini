@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/add-page.css">
-    <script src="../assets/js/index.js" defer></script>
-    <script src="../assets/js/edit-student.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <link rel="stylesheet" href="../assets/css/staff-list.css">
+    <script src="../assets/js/salary.js" defer></script>
+    <script src="../assets/js/staff-list.js" defer></script>
     <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
 </head>
@@ -23,7 +22,7 @@
                 </button>
                 <div class="search-bar flex items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search student">
+                    <input type="text" placeholder="Search employee">
                 </div>
             </div>
 
@@ -97,7 +96,7 @@
                         </a>
                     </li>
                     
-                    <li class="submenu pointer active open">
+                    <li class="submenu pointer">
                         <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -106,7 +105,7 @@
                             </span>
                         </div>
                         <ul>
-                            <li class="pointer"><a href="./student-list.html">Students list</a></li>
+                            <li class="pointer"><a href="./student-list.html" >Students list</a></li>
                             <li class="pointer"><a href="./add-student.html">Add Student</a></li>
                         </ul>
                     </li>
@@ -157,7 +156,7 @@
                         </ul>
                     </li>
 
-                    <li class="submenu pointer">
+                    <li class="submenu pointer active">
                         <a href="#" class="head flex justify-between items-center">
                             <span class="iconize name">
                                 <i class="fa-solid fa-money-bill"></i>
@@ -190,30 +189,43 @@
             
             <div class="content">
                 <div class="page-header flex justify-between">
-                    <h4 class="page-welcome">Students</h4>
-                    <span class="page-adress">Students / Edit Student</span>
+                    <h4 class="page-welcome">Salary</h4>
+                    <span class="page-adress">Salary status</span>
                 </div>
-                
-                <div class="boxes flex items-center justify-center">
-                    <div class="box">
-                        <span class="box-title">
-                            Edit Student
+
+                <div class="boxes">
+
+                    <div class="box staff">
+                        <span class="box-title flex justify-between items-center">
+                            Staff
                         </span>
-    
-                        <form method="put" action="./student-list.html" onsubmit="editStudent(event)" class="form flex flex-col justify-between items-center">
-                            <input class="input" type="text" placeholder="Name" name="name" required>
-                            <input class="input" type="date" placeholder="Date Of Birth" name="dob" required>
-                            <select class="select" name="gender" required>
-                                <option value="empty" disabled selected>Gender</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                            <input class="input" type="text" placeholder="Class" name="class" required>
-                            <input class="input" type="text" placeholder="Parent Name" name="parent-name" required>
-                            <input class="input" type="tel" placeholder="Mobile Number" name="mobileNumber" required>
-                            <input class="input" type="text" placeholder="Adress" name="address">
-                            <input class="pointer" type="submit" value="Apply Changes">
-                        </form>
+
+                        <table cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>DOB</th>
+                                    <th>Gender</th>
+                                    <th>Job</th>
+                                    <th>Salary($)</th>
+                                    <th>Mobile number</th>
+                                    <th>Address</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="data">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

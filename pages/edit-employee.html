@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/student.svg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/add-page.css">
-    <script src="../assets/js/index.js" defer></script>
-    <script src="../assets/js/edit-student.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="../assets/js/edit-employee.js" defer></script>
+    <script src="../assets/js/add-teacher.js" defer></script>
     <script src="https://kit.fontawesome.com/3c9b88224f.js" crossorigin="anonymous" defer></script>
     <title>Student Management</title>
 </head>
@@ -97,7 +96,7 @@
                         </a>
                     </li>
                     
-                    <li class="submenu pointer active open">
+                    <li class="submenu pointer">
                         <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -106,7 +105,7 @@
                             </span>
                         </div>
                         <ul>
-                            <li class="pointer"><a href="./student-list.html">Students list</a></li>
+                            <li class="pointer"><a href="./student-list.html" >Students list</a></li>
                             <li class="pointer"><a href="./add-student.html">Add Student</a></li>
                         </ul>
                     </li>
@@ -129,7 +128,7 @@
                         <span>Management</span>
                     </li>
 
-                    <li class="submenu pointer">
+                    <li class="submenu pointer active">
                         <div href="#" onclick="showDropdown(this, 2)" class="head iconize flex justify-between items-center">
                             
                             <span class="iconize name">
@@ -190,17 +189,17 @@
             
             <div class="content">
                 <div class="page-header flex justify-between">
-                    <h4 class="page-welcome">Students</h4>
-                    <span class="page-adress">Students / Edit Student</span>
+                    <h4 class="page-welcome">Staff</h4>
+                    <span class="page-adress">Staff / Edit Employee</span>
                 </div>
                 
                 <div class="boxes flex items-center justify-center">
                     <div class="box">
                         <span class="box-title">
-                            Edit Student
+                            Edit Employee
                         </span>
     
-                        <form method="put" action="./student-list.html" onsubmit="editStudent(event)" class="form flex flex-col justify-between items-center">
+                        <form method="post" action="./staff-list.html" onsubmit="editEmployee(event)" class="form flex flex-col justify-between items-center">
                             <input class="input" type="text" placeholder="Name" name="name" required>
                             <input class="input" type="date" placeholder="Date Of Birth" name="dob" required>
                             <select class="select" name="gender" required>
@@ -208,10 +207,19 @@
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                             </select>
-                            <input class="input" type="text" placeholder="Class" name="class" required>
-                            <input class="input" type="text" placeholder="Parent Name" name="parent-name" required>
+                            <select class="select" name="job" required>
+                                <option value="empty" disabled selected>Job</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Head Teacher">Head Teacher</option>
+                                <option value="Jaintor">Jaintor</option>
+                                <option value="Engineer">Engineer</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Librarian">Librarian</option>
+                            </select>
+                            
+                            <input class="input" type="text" placeholder="Salary ($)" name="salary" required>
                             <input class="input" type="tel" placeholder="Mobile Number" name="mobileNumber" required>
-                            <input class="input" type="text" placeholder="Adress" name="address">
+                            <input class="input" type="text" placeholder="Adress" name="address" required>
                             <input class="pointer" type="submit" value="Apply Changes">
                         </form>
                     </div>

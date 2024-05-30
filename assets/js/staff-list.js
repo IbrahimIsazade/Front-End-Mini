@@ -9,6 +9,7 @@ function fillTableWith(data) {
 
     data.forEach(item => {
         const valuesArray = Object.values(item);
+        valuesArray.pop();
         const studentRow = document.createElement("tr");
         
         valuesArray.forEach(value => {
